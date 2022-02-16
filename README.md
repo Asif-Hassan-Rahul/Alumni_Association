@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<h1 style="color:red">A Fresh Laravel 8 project with Role , Admin LTE</h1>
+<h1 style="color:red">A Laravel project for an Alumni Association</h1>
 <h3 style="color:blue">Commads to run the project</h1>    
 <ul>
   <li>composer install</li>
