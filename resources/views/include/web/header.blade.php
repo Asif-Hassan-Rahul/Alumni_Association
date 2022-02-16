@@ -11,6 +11,12 @@
                                 +1 (514) 312-5678
                             </a>
                         </li>
+                        <li>
+                            <a href="mailto:info@unco.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                info@unco.com
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -114,24 +120,24 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Courses
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </a>
+{{--                            <li class="nav-item">--}}
+{{--                                <a href="#" class="nav-link">--}}
+{{--                                    Courses--}}
+{{--                                    <i class="ri-arrow-down-s-line"></i>--}}
+{{--                                </a>--}}
 
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="courses.html" class="nav-link">Courses</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="tuition-fees.html" class="nav-link">Tuition fees</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="courses-details.html" class="nav-link">Courses details</a>
-                                    </li>
-                                </ul>
-                            </li>
+{{--                                <ul class="dropdown-menu">--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="courses.html" class="nav-link">Courses</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="tuition-fees.html" class="nav-link">Tuition fees</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="courses-details.html" class="nav-link">Courses details</a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </li>--}}
 
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
@@ -212,46 +218,46 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Events
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </a>
+{{--                            <li class="nav-item">--}}
+{{--                                <a href="#" class="nav-link">--}}
+{{--                                    Events--}}
+{{--                                    <i class="ri-arrow-down-s-line"></i>--}}
+{{--                                </a>--}}
 
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="events.html" class="nav-link">Events</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="event-details.html" class="nav-link">Event details</a>
-                                    </li>
-                                </ul>
-                            </li>
+{{--                                <ul class="dropdown-menu">--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="events.html" class="nav-link">Events</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="event-details.html" class="nav-link">Event details</a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </li>--}}
 
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Shop
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </a>
+{{--                            <li class="nav-item">--}}
+{{--                                <a href="#" class="nav-link">--}}
+{{--                                    Shop--}}
+{{--                                    <i class="ri-arrow-down-s-line"></i>--}}
+{{--                                </a>--}}
 
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="products.html" class="nav-link">Products</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="cart.html" class="nav-link">Cart</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="wishlist.html" class="nav-link">Wishlist</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="checkout.html" class="nav-link">Checkout</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="product-details.html" class="nav-link">Product details</a>
-                                    </li>
-                                </ul>
-                            </li>
+{{--                                <ul class="dropdown-menu">--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="products.html" class="nav-link">Products</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="cart.html" class="nav-link">Cart</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="wishlist.html" class="nav-link">Wishlist</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="checkout.html" class="nav-link">Checkout</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="product-details.html" class="nav-link">Product details</a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </li>--}}
 
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
