@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::view('/','welcome');
+Route::view('/about','web.about.about')->name('about');
+Route::view('/contact','web.contact.contact')->name('contact');
+Route::view('/events','web.events.events')->name('events');
+Route::view('/event-details','web.events.event-details')->name('event_details');
 
 Route::get('/clear-all/{id}', function($id) {
     if ($id == 'admin1234') {

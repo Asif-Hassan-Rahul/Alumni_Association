@@ -85,22 +85,33 @@
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">
+                                <a href="/" class="nav-link active">
                                     Home
-                                    <i class="ri-arrow-down-s-line"></i>
                                 </a>
 
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="index.html" class="nav-link active">Home one</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index-2.html" class="nav-link">Home two</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index-3.html" class="nav-link">Home three</a>
-                                    </li>
-                                </ul>
+{{--                                <ul class="dropdown-menu">--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="index.html" class="nav-link active">Home one</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="index-2.html" class="nav-link">Home two</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="index-3.html" class="nav-link">Home three</a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{route('about')}}" class="nav-link">
+                                    About
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{route('events')}}" class="nav-link">
+                                    Events
+                                </a>
                             </li>
 
                             <li class="nav-item">
@@ -262,7 +273,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
+                                <a href="{{route('contact')}}" class="nav-link">Contact</a>
                             </li>
                         </ul>
 

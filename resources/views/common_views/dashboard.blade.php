@@ -41,7 +41,7 @@
                                     <div class="m-b-25">
                                             <span data-toggle="modal" data-target="#user_profile_photo_modal{{auth()->user()->id}}">
                                                 <img src="{{auth()->user()->photo_url != null ? url('storage/'.auth()->user()->photo_url) : asset('/assets/img/null/avatar.jpg')}}" class="rounded-circle img-fluid" width="150" alt="User-Profile-Image">
-                                                <i class=" mdi mdi-square-edit-outline feather fas fa-edit m-t-10 f-16 text-dark" data-toggle="tooltip" data-placement="top" title="Upload Photo"></i>
+                                                <i class=" mdi mdi-square-edit-outline feather fas fa-edit m-t-10 f-16 text-light" data-toggle="tooltip" data-placement="top" title="Upload Photo"></i>
                                             </span>
                                     </div>
 

@@ -98,7 +98,7 @@
                         <li>
                             <i class="ri-mail-line"></i>
                             <span>Email</span>
-                            <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#bad3d4dcd5facfd4d9d594d9d5d7"><span class="__cf_email__" data-cfemail="620b0c040d22170c010d4c010d0f">[email&#160;protected]</span></a>
+                            <a href="mailto:info@unco.com">info@unco.com</a>
                         </li>
                         <li>
                             <i class="ri-phone-line"></i>

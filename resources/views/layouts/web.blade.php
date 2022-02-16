@@ -35,7 +35,10 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{asset('assets/img/favicon.png')}}">
     <!-- Title -->
-    <title>Unco - College University HTML Template</title>
+    <title>Alumni Association Laravel</title>
+
+{{--    Custom CSS field--}}
+    @yield('custom_css')
 </head>
 
 <body>
@@ -61,8 +64,8 @@
 <div class="copy-right-area">
     <div class="container">
         <p>
-            Copyright <i class="ri-copyright-line"></i> 2021 Unco. Design & Developed By
-            <a href="https://envytheme.com/" target="_blank">EnvyTheme</a>
+            Copyright <i class="ri-copyright-line"></i> 2022 Alumni Association & Developed By
+            <a href="http://hilinkz.com/" target="_blank">HiLinkz Ltd</a>
         </p>
     </div>
 </div>
@@ -103,6 +106,9 @@
 <script src="{{asset('assets/js/ajaxchimp.min.js')}}"></script>
 <!-- Custom JS -->
 <script src="{{asset('assets/js/custom.js')}}"></script>
+
+{{--Custom JS field--}}
+@yield('custom_js')
 </body>
 
 <!-- Mirrored from templates.envytheme.com/unco/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Feb 2022 16:11:17 GMT -->

@@ -113,14 +113,14 @@
                     <div class="col-12">
                         <div class="form-group">
                             <label>Email</label>
-                            <input id="email" type="text" name="email" class="form-control" type="text" name="name">
+                            <input id="email" type="text" name="email" class="form-control" type="text" >
                         </div>
                     </div>
 
                     <div class="col-12">
                         <div class="form-group">
                             <label>Password</label>
-                            <input id="password" type="password" name="password" class="form-control" type="password" name="password">
+                            <input id="password" type="password" name="password" class="form-control" type="password">
                         </div>
                     </div>
 
@@ -144,7 +144,7 @@
                     </div>
 
                     <div class="col-12">
-                        <p class="create">Don’t have an account? <a href="register.html">create</a></p>
+                        <p class="create">Don’t have an account? <a href="{{route('register')}}">create</a></p>
                     </div>
                 </div>
             </form>
