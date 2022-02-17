@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Spatie\Permission\Traits\HasPermissions;
+use Spatie\Permission\Traits\HasRoles;
 
 class RegisterController extends Controller
 {
@@ -74,6 +76,16 @@ class RegisterController extends Controller
         $user->phone = $data['phone'];
         $user->photo_url = null;
         $user->save();
+
+
+        //GETS AN INSTANCE OF THE NEW USER
+        $newUser = User::where('email',$data['email'])->first();
+        //GIVE THE NEW PERSON "USER-CAN" PERMISSION
+        $newUser->givePermissionTo('user-can');
+        //GIVE THE NEW PERSON "USER" ROLE
+        $newUser->assignRole('USER');
+
+
 
         return $user;
     }

@@ -74,6 +74,7 @@ Route::POST('/update-user-other-info',[EditProfileController::class, 'update_use
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('manage_roles', ManageRolesController::class);
     Route::resource('manage_users', ManageUsersController::class);
+
 });
 
 
@@ -82,8 +83,8 @@ Route::group(['middleware' => ['auth']], function() {
  ==== Manage Alumni starts Here  ===
 -----------------------------------------------------------
 */
-Route::GET('/manage-alumni/create/{user_id}', [AlumniController::class, 'create'])->name('manage_alumni.create_non_resource')->middleware('auth');
-Route::resource('manage_alumni', AlumniController::class)->middleware('auth');
+Route::GET('/manage-alumni/create/{user_id}', [\App\Http\Controllers\CommonControllers\AlumniController::class, 'create'])->name('manage_alumni.create_non_resource')->middleware('auth');
+Route::resource('manage_alumni', \App\Http\Controllers\CommonControllers\AlumniController::class)->middleware('auth');
 
 
 

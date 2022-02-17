@@ -286,9 +286,15 @@
                         <div class="others-options">
                             <ul>
                                 <li>
-                                    <a href="{{route('login')}}" class="default-btn">
-                                        Login
-                                    </a>
+                                    @if(\Illuminate\Support\Facades\Auth::user())
+                                        <a href="{{route('dashboard')}}" class="default-btn">
+                                            Dashboard
+                                        </a>
+                                    @else
+                                        <a href="{{route('login')}}" class="default-btn">
+                                            Login
+                                        </a>
+                                    @endif
                                 </li>
                                 <li>
                                     <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-target="#exampleModalsrc">

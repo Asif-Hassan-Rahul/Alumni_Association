@@ -78,6 +78,7 @@ class LoginController extends Controller
         }
 
 
+
         if ($user !== null) {
             Auth::login($user);
             return $this->sendLoginResponse($request);
