@@ -33,9 +33,6 @@ class DashboardController extends Controller
         $path = public_path('storage') . "/uploaded_photo/user_photo/" . $image_name;
 
 
-        if (!file_exists(storage_path().'/app/public/uploaded_photo/user_photo/')) {
-            mkdir(storage_path().'/app/public/uploaded_photo/user_photo/', 0777, true);
-        }
 
         file_put_contents($path, $data);
         $user = User::findOrFail($request->user_id);

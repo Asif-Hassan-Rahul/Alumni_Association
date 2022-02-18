@@ -38,7 +38,7 @@ Route::get('/clear-all/{id}', function($id) {
 });
 
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 /*
 -----------------------------------------------------------

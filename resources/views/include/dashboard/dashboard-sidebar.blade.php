@@ -71,6 +71,17 @@
                     </li>
                 @endcan
 
+                @can('alumni-can')
+                    <li class="nav-item">
+                        <a href="{{route('manage_alumni.show',\Illuminate\Support\Facades\Auth::id())}}" class="nav-link">
+                            <i class="nav-icon fas fa-user-secret"></i>
+                            <p>
+                                Alumni Information
+                            </p>
+                        </a>
+                    </li>
+                @endcan
+
 
 
                 <li class="nav-item">

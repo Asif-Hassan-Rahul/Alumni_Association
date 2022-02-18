@@ -74,13 +74,13 @@
                                             <h6 class="text-muted f-w-400"><i class="fa fa-phone text-green mr-2 font-weight-bold" aria-hidden="true"></i>{{auth()->user()->phone}}</h6>
                                         </div>
                                     </div>
-{{--                                    <h6 class="b-b-default"></h6>--}}
-{{--                                    <div class="row">--}}
-{{--                                        <div class="col-sm-6">--}}
-{{--                                            <p class="m-b-10 f-w-600">Present Address</p>--}}
-{{--                                            <h6 class="text-muted f-w-400"><i class="fa fa-map-marker text-green mr-2" aria-hidden="true" style="font-size: 17px"></i> {{auth()->user()->address}}</h6>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
+                                    {{--                                    <h6 class="b-b-default"></h6>--}}
+                                    {{--                                    <div class="row">--}}
+                                    {{--                                        <div class="col-sm-6">--}}
+                                    {{--                                            <p class="m-b-10 f-w-600">Present Address</p>--}}
+                                    {{--                                            <h6 class="text-muted f-w-400"><i class="fa fa-map-marker text-green mr-2" aria-hidden="true" style="font-size: 17px"></i> {{auth()->user()->address}}</h6>--}}
+                                    {{--                                        </div>--}}
+                                    {{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>

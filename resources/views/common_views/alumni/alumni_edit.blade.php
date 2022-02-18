@@ -1,10 +1,8 @@
 @extends('layouts.dashboard_layout')
 
+
+
 @section('content')
-
-
-
-
     <div class="container-fluid px-lg-4">
         <div class="row mt-3">
             <div class="col-11 mx-auto my-4">
@@ -13,10 +11,15 @@
                         <h3 class="card-title text-center">Alumni Form</h3>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{route('manage_alumni.store')}}" enctype="multipart/form-data"
-                              class="form">
+                        <form method="POST" action="{{route('manage_alumni.update',$alumni->id)}}"
+                              enctype="multipart/form-data" class="form">
                             @csrf
-                            <input name="user_id" type="hidden" value="{{$user_id}}">
+
+
+                            <input name="_method" type="hidden" value="PUT">
+                            <input name="alumni_id" type="hidden" value="{{$alumni->id}}">
+                            <input name="user_id" type="hidden" value="{{\Illuminate\Support\Facades\Auth::id()}}">
+
                             <div class="form-row">
 
                                 <div class="col-12 col-sm-12">
@@ -88,16 +91,17 @@
                                         </select>
                                     </div>
                                 </div>
-
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
-                                        <label for="dob">Date of Birth <span class="text-danger font-weight-bold">*</span></label>
+                                        <label for="dob">Date of Birth <span
+                                                class="text-danger font-weight-bold">*</span></label>
                                         <input type="date" id="dob" class="form-control" name="dob">
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
-                                        <label for="gender">Gender <span class="text-danger font-weight-bold">*</span></label>
+                                        <label for="gender">Gender <span
+                                                class="text-danger font-weight-bold">*</span></label>
                                         <select name="gender" class="form-control" id="gender">
                                             <option value="">Select</option>
                                             <option value="Male">Male</option>
@@ -110,7 +114,8 @@
                                     <div class="form-group">
                                         <label for="phone2">Phone (Secondary)</label>
                                         <input id="phone2" class="form-control" type="number" name="phone2"
-                                               value="{{ old('phone2') }}" autofocus placeholder="Enter Your Secondary Phone"/>
+                                               value="{{$alumni->phone2}}" autofocus
+                                               placeholder="Enter Your Secondary Phone"/>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
@@ -369,24 +374,26 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
-                                        <label for="area">Area<span class="text-danger font-weight-bold">*</span></label>
+                                        <label for="area">Area<span
+                                                class="text-danger font-weight-bold">*</span></label>
                                         <textarea class="form-control" id="area" rows="3" name="area"
-                                                  placeholder="Enter Your Area" required>{{ old('area') }}</textarea>
+                                                  placeholder="Enter Your Area" required>{{ $alumni->area }}</textarea>
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
-                                        <label for="city">City<span class="text-danger font-weight-bold">*</span></label>
+                                        <label for="city">City<span
+                                                class="text-danger font-weight-bold">*</span></label>
                                         <textarea class="form-control" id="city" rows="3" name="city"
-                                                  placeholder="Enter Your city" required>{{ old('city') }}</textarea>
+                                                  placeholder="Enter Your city" required>{{ $alumni->city }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="facebook_id">Facebook ID</label>
                                         <input id="facebook_id" class="form-control" type="text" name="facebook_id"
-                                               value="{{ old('facebook_id') }}" placeholder="www.facebook.com/user-name"
+                                               value="{{$alumni->facebook_id}}" placeholder="www.facebook.com/user-name"
                                                autofocus/>
                                     </div>
                                 </div>
@@ -395,14 +402,31 @@
                                     <div class="form-group">
                                         <label for="linkedin_id">Linkedin ID</label>
                                         <input id="linkedin_id" class="form-control" type="text" name="linkedin_id"
-                                               value="{{ old('linkedin_id') }}" placeholder="www.linkedin.com/user-name"
+                                               value="{{$alumni->linkedin_id}}" placeholder="www.linkedin.com/user-name"
                                                autofocus/>
                                     </div>
                                 </div>
-
+                                {{--                    <div class="col-12 col-sm-6">--}}
+                                {{--                        <div class="form-group">--}}
+                                {{--                            <label for="profession_type">Profession Type</label><br>--}}
+                                {{--                            <div class="form-check form-check-inline">--}}
+                                {{--                                <input class="form-check-input" type="checkbox" id="profession_type" value="Job" name="profession_type">--}}
+                                {{--                                <label class="form-check-label" for="inlineCheckbox1">Job</label>--}}
+                                {{--                            </div>--}}
+                                {{--                            <div class="form-check form-check-inline">--}}
+                                {{--                                <input class="form-check-input" type="checkbox" id="profession_type" value="Business" name="profession_type">--}}
+                                {{--                                <label class="form-check-label" for="inlineCheckbox2">Business</label>--}}
+                                {{--                            </div>--}}
+                                {{--                            <div class="form-check form-check-inline">--}}
+                                {{--                                <input class="form-check-input" type="checkbox" id="profession_type" value="Both" name="profession_type">--}}
+                                {{--                                <label class="form-check-label" for="inlineCheckbox3">Both</label>--}}
+                                {{--                            </div>--}}
+                                {{--                        </div>--}}
+                                {{--                    </div>--}}
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
-                                        <label for="profession_type">Profession Type <span class="text-danger font-weight-bold">*</span></label>
+                                        <label for="profession_type">Profession Type <span
+                                                class="text-danger font-weight-bold">*</span></label>
                                         <select name="profession_type" class="form-control" id="profession_type">
                                             <option value="">Select</option>
                                             <option value="Job">Job</option>
@@ -415,14 +439,15 @@
                                     <div class="form-group">
                                         <label for="designation">Designation</label>
                                         <input id="designation" class="form-control" type="text" name="designation"
-                                               value="{{ old('designation') }}" autofocus/>
+                                               value="{{ $alumni->designation }}" autofocus/>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="working_company_name">Company Name</label>
                                         <input id="working_company_name" class="form-control" type="text"
-                                               name="working_company_name" value="{{ old('working_company_name') }}" autofocus/>
+                                               name="working_company_name" value="{{ $alumni->working_company_name }}"
+                                               autofocus/>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
@@ -431,29 +456,31 @@
                                         <textarea class="form-control" id="batch_mate_reference" rows="3"
                                                   name="batch_mate_reference"
                                                   placeholder="Example:(Batchmate's name, Batchmate's Phone number)"
-                                                  required>{{ old('batch_mate_reference') }}</textarea>
+                                                  required>{{ $alumni->batch_mate_reference }}</textarea>
                                     </div>
                                 </div>
-
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group"></div>
+                                </div>
                             </div>
-
                             <hr style="border-top: 1px dashed #0cbdff; margin: 50px 0px 50px 0px;">
+
                             <div class="form-row">
 
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="permanent_address">Permanent Address <span
                                                 class="text-danger font-weight-bold">*</span></label>
-                                        <textarea class="form-control" id="permanent_address" rows="3" name="permanent_address"
-                                                  placeholder="Enter Your Permanent Address"
-                                                  required>{{ old('permanent_address') }}</textarea>
+                                        <textarea class="form-control" id="permanent_address" rows="3"
+                                                  name="permanent_address" placeholder="Enter Your Permanent Address"
+                                                  required>{{$alumni->permanent_address}}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="professional_address">Profession & Professional Address</label>
                                         <textarea class="form-control" id="professional_address" rows="3"
-                                                  name="professional_address">{{ old('professional_address') }}</textarea>
+                                                  name="professional_address">{{$alumni->professional_address}}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -491,7 +518,7 @@
                                     <div class="form-group">
                                         <label for="spouse_name">Spouse Name</label>
                                         <input id="spouse_name" class="form-control" type="text" name="spouse_name"
-                                               value="{{old('spouse_name')}}" autofocus/>
+                                               value="{{$alumni->spouse_name}}" autofocus/>
                                     </div>
                                 </div>
 
@@ -518,7 +545,7 @@
                                         <label for="spouse_professional_address">Spouse Profession & Professional
                                             Address</label>
                                         <textarea class="form-control" id="spouse_professional_address" rows="3"
-                                                  name="spouse_professional_address">{{old('spouse_professional_address')}}</textarea>
+                                                  name="spouse_professional_address">{{$alumni->spouse_professional_address}}</textarea>
                                     </div>
                                 </div>
 
@@ -533,10 +560,30 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+@endsection
 
+
+
+@section('extra_js')
+    <script>
+
+        $(window).on('load', function () {
+            document.getElementById("number_of_child").value = "{{$alumni->number_of_child}}";
+            document.getElementById("buet_id").value = "{{$alumni->buet_id}}";
+            document.getElementById("marital_status").value = "{{$alumni->marital_status}}";
+            document.getElementById("blood_group").value = "{{$alumni->blood_group}}";
+            document.getElementById("gender").value = "{{$alumni->gender}}";
+            document.getElementById("country").value = "{{$alumni->country}}";
+            document.getElementById("batch").value = "{{$alumni->batch}}";
+            document.getElementById("profession_type").value = "{{$alumni->profession_type}}";
+            document.getElementById("dob").value = "{{(new DateTime($alumni->dob))->format("Y-m-d")}}";
+            console.log('hello');
+        });
+
+    </script>
+    <script src="{{asset('js/dashboard/dashboard-1.js')}}"></script>
 @endsection
