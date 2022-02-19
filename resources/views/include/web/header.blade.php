@@ -90,8 +90,8 @@
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
-                            <li class="nav-item">
-                                <a href="/" class="nav-link active">
+                            <li class="nav-item {{ request()->is('/') ? 'active' : ''}}" >
+                                <a href="/" class="nav-link">
                                     Home
                                 </a>
 
@@ -108,19 +108,19 @@
 {{--                                </ul>--}}
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item {{ request()->is('about') ? 'active' : ''}}">
                                 <a href="{{route('about')}}" class="nav-link">
                                     About
                                 </a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item {{ request()->is('events') ? 'active' : ''}}">
                                 <a href="{{route('events')}}" class="nav-link">
                                     Events
                                 </a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item {{ request()->is('alumni') ? 'active' : ''}}">
                                 <a href="{{route('alumni')}}" class="nav-link">
                                     Alumni
                                 </a>
@@ -285,7 +285,7 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item {{ request()->is('contact') ? 'active' : ''}}">
                                 <a href="{{route('contact')}}" class="nav-link">Contact</a>
                             </li>
                         </ul>

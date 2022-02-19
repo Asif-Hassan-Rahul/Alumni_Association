@@ -24,6 +24,7 @@ Route::view('/contact','web.contact.contact')->name('contact');
 Route::view('/events','web.events.events')->name('events');
 Route::view('/event-details','web.events.event-details')->name('event_details');
 Route::get('/alumni',[\App\Http\Controllers\CommonControllers\AlumniController::class, 'getAlumniFrontEnd'])->name('alumni');
+Route::get('/alumni/{alumni_id}',[\App\Http\Controllers\CommonControllers\AlumniController::class, 'getSingleAlumniFrontEnd'])->name('front_alumni');
 
 Route::get('/clear-all/{id}', function($id) {
     if ($id == 'admin1234') {
@@ -31,7 +32,7 @@ Route::get('/clear-all/{id}', function($id) {
         $exitCode = Artisan::call('config:clear');
         $exitCode = Artisan::call('view:clear');
         $exitCode = Artisan::call('route:clear');
-        return 'Cache,config,view clear done!';
+        return 'Cache,config,view,route clear done!';
     }
     else{
         return 'Sorry, wrong pin.';

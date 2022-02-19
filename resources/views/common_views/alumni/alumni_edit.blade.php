@@ -23,15 +23,21 @@
                             <div class="form-row">
 
                                 <div class="col-12 col-sm-12">
+                                    <div class="form-group alert-success text-center">
+                                        <h4 class="text-white">Personal Information</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="buet_id">BUET ID <span class="text-danger font-weight-bold">*</span></label>
                                         <input type="number" id="buet_id" class="form-control" name="buet_id">
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-12">
+                                <div class="col-12 col-sm-6">
                                     <div class="form-group">
-                                        <label for="batch">Batch <span class="text-danger font-weight-bold">*</span></label>
+                                        <label for="batch">Batch <span class="badge badge-warning">(HSC Passing Year)</span><span class="text-danger font-weight-bold">*</span></label>
                                         <select id="batch" class="form-control" name="batch">
                                             <option>Year</option>
                                             <option value="2022">2022</option>
@@ -120,7 +126,134 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
-                                        <label for="country">Country <span class="text-danger font-weight-bold">*</span></label>
+                                        <label for="blood_group">Blood Group *</label>
+                                        <select name="blood_group" class="form-control" id="blood_group" required>
+
+                                            <option value="">Select</option>
+                                            @php
+                                                $blood_groups = \App\Models\BloodGroup::all();
+                                            @endphp
+                                            @if(!$blood_groups->isEmpty())
+                                                @foreach($blood_groups as $blood_group)
+                                                    <option
+                                                        value="{{$blood_group->blood_group_name}}">{{$blood_group->blood_group_name}}</option>
+                                                @endforeach
+                                            @endif
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-sm-12">
+                                    <div class="form-group alert-success text-center">
+                                        <h4 class="text-white">Social Information</h4>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="facebook_id">Facebook ID</label>
+                                        <input id="facebook_id" class="form-control" type="text" name="facebook_id"
+                                               value="{{$alumni->facebook_id}}" placeholder="www.facebook.com/user-name"
+                                               autofocus/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="linkedin_id">Linkedin ID</label>
+                                        <input id="linkedin_id" class="form-control" type="text" name="linkedin_id"
+                                               value="{{$alumni->linkedin_id}}" placeholder="www.linkedin.com/user-name"
+                                               autofocus/>
+                                    </div>
+                                </div>
+                                {{--                    <div class="col-12 col-sm-6">--}}
+                                {{--                        <div class="form-group">--}}
+                                {{--                            <label for="profession_type">Profession Type</label><br>--}}
+                                {{--                            <div class="form-check form-check-inline">--}}
+                                {{--                                <input class="form-check-input" type="checkbox" id="profession_type" value="Job" name="profession_type">--}}
+                                {{--                                <label class="form-check-label" for="inlineCheckbox1">Job</label>--}}
+                                {{--                            </div>--}}
+                                {{--                            <div class="form-check form-check-inline">--}}
+                                {{--                                <input class="form-check-input" type="checkbox" id="profession_type" value="Business" name="profession_type">--}}
+                                {{--                                <label class="form-check-label" for="inlineCheckbox2">Business</label>--}}
+                                {{--                            </div>--}}
+                                {{--                            <div class="form-check form-check-inline">--}}
+                                {{--                                <input class="form-check-input" type="checkbox" id="profession_type" value="Both" name="profession_type">--}}
+                                {{--                                <label class="form-check-label" for="inlineCheckbox3">Both</label>--}}
+                                {{--                            </div>--}}
+                                {{--                        </div>--}}
+                                {{--                    </div>--}}
+
+                                <div class="col-12 col-sm-12">
+                                    <div class="form-group alert-success text-center">
+                                        <h4 class="text-white">Professional Information</h4>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="profession_type">Profession Type <span
+                                                class="text-danger font-weight-bold">*</span></label>
+                                        <select name="profession_type" class="form-control" id="profession_type">
+                                            <option value="">Select</option>
+                                            <option value="Job">Job</option>
+                                            <option value="Business">Business</option>
+                                            <option value="Both">Both</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="designation">Designation</label>
+                                        <input id="designation" class="form-control" type="text" name="designation"
+                                               value="{{ $alumni->designation }}" autofocus/>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="working_company_name">Company Name</label>
+                                        <input id="working_company_name" class="form-control" type="text" name="working_company_name" value="{{ $alumni->working_company_name }}" autofocus/>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="batch_mate_reference">Batchmate Reference <span class="badge badge-warning">Batchmate ID</span></label>
+                                        <input class="form-control" id="batch_mate_reference" name="batch_mate_reference" placeholder="Batchmate ID" value="{{ $alumni->batch_mate_reference }}" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="area_of_expertise">Area of Expertise</label>
+                                        <input id="area_of_expertise" class="form-control" type="text" name="area_of_expertise" value="" autofocus/>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="area_of_interest">Area of Interest</label>
+                                        <input id="area_of_interest" class="form-control" type="text" name="area_of_interest" value="" autofocus/>
+                                    </div>
+                                </div>
+{{--                                <div class="col-12 col-sm-6">--}}
+{{--                                    <div class="form-group"></div>--}}
+{{--                                </div>--}}
+                            </div>
+{{--                            <hr style="border-top: 1px dashed #0cbdff; margin: 50px 0px 50px 0px;">--}}
+
+                            <div class="col-12 col-sm-12">
+                                <div class="form-group alert-success text-center">
+                                    <h4 class="text-white">Residence Information</h4>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="country">Country <span class="badge badge-warning">(Currently Residing)</span><span class="text-danger font-weight-bold">*</span></label>
                                         <select id="country" name="country" class="form-control">
                                             <option value="">Select</option>
                                             <option value="Afganistan">Afghanistan</option>
@@ -389,83 +522,6 @@
                                                   placeholder="Enter Your city" required>{{ $alumni->city }}</textarea>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="facebook_id">Facebook ID</label>
-                                        <input id="facebook_id" class="form-control" type="text" name="facebook_id"
-                                               value="{{$alumni->facebook_id}}" placeholder="www.facebook.com/user-name"
-                                               autofocus/>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="linkedin_id">Linkedin ID</label>
-                                        <input id="linkedin_id" class="form-control" type="text" name="linkedin_id"
-                                               value="{{$alumni->linkedin_id}}" placeholder="www.linkedin.com/user-name"
-                                               autofocus/>
-                                    </div>
-                                </div>
-                                {{--                    <div class="col-12 col-sm-6">--}}
-                                {{--                        <div class="form-group">--}}
-                                {{--                            <label for="profession_type">Profession Type</label><br>--}}
-                                {{--                            <div class="form-check form-check-inline">--}}
-                                {{--                                <input class="form-check-input" type="checkbox" id="profession_type" value="Job" name="profession_type">--}}
-                                {{--                                <label class="form-check-label" for="inlineCheckbox1">Job</label>--}}
-                                {{--                            </div>--}}
-                                {{--                            <div class="form-check form-check-inline">--}}
-                                {{--                                <input class="form-check-input" type="checkbox" id="profession_type" value="Business" name="profession_type">--}}
-                                {{--                                <label class="form-check-label" for="inlineCheckbox2">Business</label>--}}
-                                {{--                            </div>--}}
-                                {{--                            <div class="form-check form-check-inline">--}}
-                                {{--                                <input class="form-check-input" type="checkbox" id="profession_type" value="Both" name="profession_type">--}}
-                                {{--                                <label class="form-check-label" for="inlineCheckbox3">Both</label>--}}
-                                {{--                            </div>--}}
-                                {{--                        </div>--}}
-                                {{--                    </div>--}}
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="profession_type">Profession Type <span
-                                                class="text-danger font-weight-bold">*</span></label>
-                                        <select name="profession_type" class="form-control" id="profession_type">
-                                            <option value="">Select</option>
-                                            <option value="Job">Job</option>
-                                            <option value="Business">Business</option>
-                                            <option value="Both">Both</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="designation">Designation</label>
-                                        <input id="designation" class="form-control" type="text" name="designation"
-                                               value="{{ $alumni->designation }}" autofocus/>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="working_company_name">Company Name</label>
-                                        <input id="working_company_name" class="form-control" type="text"
-                                               name="working_company_name" value="{{ $alumni->working_company_name }}"
-                                               autofocus/>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="batch_mate_reference">Batchmate Reference</label>
-                                        <textarea class="form-control" id="batch_mate_reference" rows="3"
-                                                  name="batch_mate_reference"
-                                                  placeholder="Example:(Batchmate's name, Batchmate's Phone number)"
-                                                  required>{{ $alumni->batch_mate_reference }}</textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group"></div>
-                                </div>
-                            </div>
-                            <hr style="border-top: 1px dashed #0cbdff; margin: 50px 0px 50px 0px;">
-
-                            <div class="form-row">
 
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
@@ -476,6 +532,7 @@
                                                   required>{{$alumni->permanent_address}}</textarea>
                                     </div>
                                 </div>
+
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="professional_address">Profession & Professional Address</label>
@@ -484,26 +541,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr style="border-top: 1px dashed #0cbdff; margin: 50px 0px 50px 0px;">
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="blood_group">Blood Group *</label>
-                                        <select name="blood_group" class="form-control" id="blood_group" required>
 
-                                            <option value="">Select</option>
-                                            @php
-                                                $blood_groups = \App\Models\BloodGroup::all();
-                                            @endphp
-                                            @if(!$blood_groups->isEmpty())
-                                                @foreach($blood_groups as $blood_group)
-                                                    <option
-                                                        value="{{$blood_group->blood_group_name}}">{{$blood_group->blood_group_name}}</option>
-                                                @endforeach
-                                            @endif
-                                        </select>
+
+                            <div class="form-row">
+                                <div class="col-12 col-sm-12 alert">
+                                    <div class="form-group alert-success text-center">
+                                        <h4 class="text-white">Marital Information</h4>
                                     </div>
                                 </div>
+
+
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="marital_status">Marital Status</label>
@@ -525,27 +572,29 @@
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="number_of_child">Number of Child</label>
-                                        <select name="number_of_child" class="form-control" id="number_of_child">
-                                            <option value="">Select</option>
-                                            @php
-                                                $no_of_children = \App\Models\NumberOfChildren::all();
-                                            @endphp
-                                            @if(!$no_of_children->isEmpty())
-                                                @foreach($no_of_children as $num_child)
-                                                    <option
-                                                        value="{{$num_child->number_of_children}}">{{$num_child->number_of_children}}</option>
-                                                @endforeach
-                                            @endif
-                                        </select>
+{{--                                        <select name="number_of_child" class="form-control" id="number_of_child">--}}
+{{--                                            <option value="">Select</option>--}}
+{{--                                            @php--}}
+{{--                                                $no_of_children = \App\Models\NumberOfChildren::all();--}}
+{{--                                            @endphp--}}
+{{--                                            @if(!$no_of_children->isEmpty())--}}
+{{--                                                @foreach($no_of_children as $num_child)--}}
+{{--                                                    <option--}}
+{{--                                                        value="{{$num_child->number_of_children}}">{{$num_child->number_of_children}}</option>--}}
+{{--                                                @endforeach--}}
+{{--                                            @endif--}}
+{{--                                        </select>--}}
+                                        <input id="number_of_child" class="form-control" type="number" name="number_of_child"
+                                               value="{{$alumni->spouse_name}}" autofocus/>
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-12">
+                                <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="spouse_professional_address">Spouse Profession & Professional
                                             Address</label>
-                                        <textarea class="form-control" id="spouse_professional_address" rows="3"
-                                                  name="spouse_professional_address">{{$alumni->spouse_professional_address}}</textarea>
+                                        <input class="form-control" id="spouse_professional_address"
+                                                  name="spouse_professional_address" value="{{$alumni->spouse_professional_address}}"/>
                                     </div>
                                 </div>
 

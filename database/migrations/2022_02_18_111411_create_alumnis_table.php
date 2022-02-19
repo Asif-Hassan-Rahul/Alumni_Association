@@ -32,6 +32,8 @@ class CreateAlumnisTable extends Migration
             $table->string('profession_type')->nullable(); // job/business/both
             $table->string('designation')->nullable(); // doctor/engineer
             $table->string('working_company_name')->nullable(); // In which company does the alumni work
+            $table->string('area_of_expertise')->nullable();
+            $table->string('area_of_interest')->nullable();
             $table->string('professional_address')->nullable();
             $table->string('batch')->nullable();
             $table->string('blood_group')->nullable();

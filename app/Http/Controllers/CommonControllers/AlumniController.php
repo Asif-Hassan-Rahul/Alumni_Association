@@ -80,6 +80,8 @@ class AlumniController extends Controller
         $alumni->profession_type = $request->profession_type;
         $alumni->designation = $request->designation;
         $alumni->working_company_name = $request->working_company_name;
+        $alumni->area_of_expertise = $request->area_of_expertise;
+        $alumni->area_of_interest = $request->area_of_interest;
         $alumni->country = $request->country;
         $alumni->city = $request->city;
         $alumni->area = $request->area;
@@ -183,6 +185,8 @@ class AlumniController extends Controller
         $alumni->profession_type = $request->profession_type;
         $alumni->designation = $request->designation;
         $alumni->working_company_name = $request->working_company_name;
+        $alumni->area_of_expertise = $request->area_of_expertise;
+        $alumni->area_of_interest = $request->area_of_interest;
         $alumni->country = $request->country;
         $alumni->city = $request->city;
         $alumni->area = $request->area;
@@ -211,6 +215,14 @@ class AlumniController extends Controller
         return view('web.alumni.alumni')->with([
            'alumni_data' => $alumni_data,
 //           'user_data' => $user_data,
+        ]);
+    }
+
+    public function getSingleAlumniFrontEnd($alumni_id){
+        $alumni_data = Alumni::find($alumni_id)->first();
+
+        return view('web.alumni.alumni_single')->with([
+            'alumni_data'=>$alumni_data,
         ]);
     }
 }

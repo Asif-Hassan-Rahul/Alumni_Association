@@ -379,6 +379,35 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+
+                            <div class="row">
+
+
+                                    <div class="col-sm-2">
+                                        <h6 >Area of Expertise</h6>
+                                    </div>
+                                    <div class="col-sm-10 text-secondary">
+                                        {{$alumni_data->area_of_expertise}}
+                                    </div>
+
+
+                            </div>
+                            <div class="row">
+
+                                    <div class="col-sm-2">
+                                        <h6 >Area of Interest</h6>
+                                    </div>
+                                    <div class="col-sm-10 text-secondary">
+                                        {{$alumni_data->area_of_interest}}
+                                    </div>
+
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
                 </div>
             </div>
 
