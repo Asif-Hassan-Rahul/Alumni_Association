@@ -120,7 +120,14 @@
                                 </a>
                             </li>
 
-{{--                            <li class="nav-item">--}}
+                            <li class="nav-item">
+                                <a href="{{route('alumni')}}" class="nav-link">
+                                    Alumni
+                                </a>
+                            </li>
+
+
+                            {{--                            <li class="nav-item">--}}
 {{--                                <a href="#" class="nav-link">--}}
 {{--                                    Courses--}}
 {{--                                    <i class="ri-arrow-down-s-line"></i>--}}

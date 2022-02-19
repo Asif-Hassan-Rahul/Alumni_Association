@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\CommonControllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Alumni;
 use App\Models\User;
 use App\Rules\MatchOldPassword;
 use Illuminate\Http\Request;
@@ -56,10 +57,15 @@ class EditProfileController extends Controller
 
 
         $user = User::find($user_id);
+        $alumni = Alumni::where('user_id', $user_id)->first();
         $user->name = $name;
+        $alumni->name = $name;
         $user->email = $email;
+        $alumni->email = $email;
         $user->phone = $phone;
+        $alumni->phone1 = $phone;
         $user->save();
+        $alumni->save();
 
         return redirect()->route('edit_user_profile')->with('success','Information Updated Successfully !!');
 

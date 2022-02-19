@@ -30,8 +30,11 @@ class DashboardController extends Controller
         //$image_name= time().'.png';
         $image_name = 'USER' . $request->user_id . '-' . time() . '.png';
 
+        $folder_path = public_path('storage') . "/uploaded_photo/user_photo/";
+        if(!File::isDirectory($folder_path)){
+            File::makeDirectory($folder_path, 0777, true, true);
+        }
         $path = public_path('storage') . "/uploaded_photo/user_photo/" . $image_name;
-
 
 
         file_put_contents($path, $data);

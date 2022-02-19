@@ -112,6 +112,7 @@ class AlumniController extends Controller
         $user_id = $manage_alumnus;
         $user_data = User::find($user_id);
         $alumni_data = Alumni::where('user_id', $user_id)->first();
+        $user_data = User::where('id', $user_id)->first();
 
 
         if(!$alumni_data)
@@ -201,5 +202,15 @@ class AlumniController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getAlumniFrontEnd(){
+        $alumni_data = Alumni::with('user')->get();
+//        $user_data = User::all();
+
+        return view('web.alumni.alumni')->with([
+           'alumni_data' => $alumni_data,
+//           'user_data' => $user_data,
+        ]);
     }
 }
