@@ -225,4 +225,29 @@ class AlumniController extends Controller
             'alumni_data'=>$alumni_data,
         ]);
     }
+
+    function action(Request $request)
+    {
+        if($request->ajax())
+        {
+            $output = '';
+            $query = $request->get('query');
+            if($query != '')
+            {
+                $alumni_data = Alumni::where('name', 'like', "%{$query}%")->get();
+//                dd($alumni_data);
+
+
+//                $output =  $alumni->toJson();
+                return view('web.alumni.alumni-data', compact('alumni_data'))->render();
+            }
+
+
+//            $data = array(
+//                'table_data'  => $output,
+//            );
+//
+//            echo json_encode($data);
+        }
+    }
 }

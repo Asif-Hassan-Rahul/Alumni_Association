@@ -87,7 +87,7 @@ Route::group(['middleware' => ['auth']], function() {
 */
 Route::GET('/manage-alumni/create/{user_id}', [\App\Http\Controllers\CommonControllers\AlumniController::class, 'create'])->name('manage_alumni.create_non_resource')->middleware('auth');
 Route::resource('manage_alumni', \App\Http\Controllers\CommonControllers\AlumniController::class)->middleware('auth');
-
+Route::get('/search', [\App\Http\Controllers\CommonControllers\AlumniController::class,'action'])->name('live_search.action');
 
 
 
