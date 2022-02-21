@@ -1,6 +1,30 @@
 @extends('layouts.web')
 
 @section('custom_css')
+
+    <style>
+
+        /*########## PAGINATION ##########*/
+        
+        .page-item{
+            margin: 0px 5px;
+        }
+        .page-item .page-link{
+            /*border-radius: 20px;*/
+            z-index: 3;
+            color: #878787;
+            background-color: transparent;
+            border-color: #878787;
+        }
+        .page-item.active .page-link{
+            /*border-radius: 20px;*/
+            z-index: 3;
+            color: #878787;
+            background-color: transparent;
+            border-color: #878787;
+        }
+    </style>
+
 @endsection
 
 @section('content')
@@ -32,10 +56,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 
             </div>
-            <div class="input-group">
+            <div class="input-group mb-3">
                 <div class="form-outline">
-                    <input name="search"  type="search" id="search" class="form-control" />
-                    <label class="form-label" for="form1">Search</label>
+                    <input name="search" placeholder="Search"  type="search" id="search" class="form-control" />
+{{--                    <label class="form-label" for="form1">Search</label>--}}
                 </div>
             </div>
 
@@ -60,6 +84,9 @@
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                </div>--}}
+            </div>
+            <div class="d-flex justify-content-center">
+                {{$alumni_data->links()}}
             </div>
         </div>
     </section>

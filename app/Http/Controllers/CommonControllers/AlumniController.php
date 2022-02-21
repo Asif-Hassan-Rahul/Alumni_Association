@@ -209,7 +209,7 @@ class AlumniController extends Controller
     }
 
     public function getAlumniFrontEnd(){
-        $alumni_data = Alumni::with('user')->get();
+        $alumni_data = Alumni::with('user')->paginate(6);
 //        $user_data = User::all();
 
         return view('web.alumni.alumni')->with([
