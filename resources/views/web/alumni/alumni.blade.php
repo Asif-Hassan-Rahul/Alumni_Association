@@ -5,7 +5,7 @@
     <style>
 
         /*########## PAGINATION ##########*/
-        
+
         .page-item{
             margin: 0px 5px;
         }
