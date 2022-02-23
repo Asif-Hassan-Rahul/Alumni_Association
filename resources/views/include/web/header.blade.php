@@ -267,22 +267,22 @@
 {{--                            </li>--}}
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Blog
-                                    <i class="ri-arrow-down-s-line"></i>
+                                <a href="{{route('blogs_front')}}" class="nav-link">
+                                    Blogs
+{{--                                    <i class="ri-arrow-down-s-line"></i>--}}
                                 </a>
 
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="blog.html" class="nav-link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="blog-left-sidebar.html" class="nav-link">Blog left sidebar</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="blog-details.html" class="nav-link">Blog details</a>
-                                    </li>
-                                </ul>
+{{--                                <ul class="dropdown-menu">--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="blog.html" class="nav-link">Blog</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="blog-left-sidebar.html" class="nav-link">Blog left sidebar</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="blog-details.html" class="nav-link">Blog details</a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
                             </li>
 
                             <li class="nav-item {{ request()->is('contact') ? 'active' : ''}}">

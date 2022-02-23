@@ -101,3 +101,16 @@ Route::get('/manage-ex-students-list', [ExStudentController::class,'index'])->mi
 Route::POST('/manage-ex-students/update-alumni-status', [ExStudentController::class,'update_alumni_status'])->middleware('auth')->name('manage_ex_students.update_alumni_status');
 
 
+/*
+-----------------------------------------------------------
+ ==== Manage Blogs Here  ===
+-----------------------------------------------------------
+*/
+
+Route::resource('/blogs', \App\Http\Controllers\Admin\BlogController::class)->middleware('auth');
+Route::resource('blog_categories', \App\Http\Controllers\Admin\BlogCategoryController::class)->middleware('auth');
+Route::get('/blogs-front', [\App\Http\Controllers\Admin\BlogController::class,'home_blogs'])->name('blogs_front');
+Route::get('/blog/{blog_id}', [\App\Http\Controllers\Admin\BlogController::class, 'single_blog'])->name('single_blog');
+
+
+

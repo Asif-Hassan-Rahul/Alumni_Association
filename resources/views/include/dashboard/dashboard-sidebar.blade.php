@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="{{route('dashboard')}}" class="brand-link">
         <img src="{{asset('assets/img/sarcp-logo.png')}}" alt="SMET Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Dashboard</span>
+        <span class="brand-text font-weight-light">BUET ALUMNI</span>
     </a>
 
     <!-- Sidebar -->
@@ -81,6 +81,34 @@
                         </a>
                     </li>
                 @endcan
+
+                @can('user-list')
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-camera"></i>
+                            <p>
+                                Multimedia
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview" style="display: none;">
+                            <li class="nav-item">
+                                <a href="{{route('blog_categories.index')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Blog Categories</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('blogs.index')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Blogs</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                @endcan
+
+
 
 
 
