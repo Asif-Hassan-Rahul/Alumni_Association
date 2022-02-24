@@ -6,7 +6,7 @@
                     <div class="col-lg-6">
                         <div class="banner-content">
                             <span>Welcome to Unco</span>
-                            <h1>A world-class education is applicable for building the future</h1>
+                            <h1>A BUET ALUMNI education is applicable for building the future</h1>
 
                             <div class="banner-btn">
                                 <a href="events.html" class="default-btn">
