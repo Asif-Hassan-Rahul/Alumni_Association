@@ -32,7 +32,7 @@ class DashboardController extends Controller
 
         $folder_path = public_path('storage') . "/uploaded_photo/user_photo/";
         if(!File::isDirectory($folder_path)){
-            File::makeDirectory($folder_path, 0755, true, true);
+            File::makeDirectory($folder_path, 0777, true, true);
         }
         $path = public_path('storage') . "/uploaded_photo/user_photo/" . $image_name;
 
