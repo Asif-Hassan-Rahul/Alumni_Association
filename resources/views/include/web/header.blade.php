@@ -59,7 +59,7 @@
                 <div class="mobile-responsive-menu">
                     <div class="logo">
                         <a href="/">
-                            <img src="assets/img/logo.png" alt="logo">
+                            <img src="{{asset('assets/img/logo.png')}}" alt="logo">
                         </a>
                     </div>
 
@@ -85,7 +85,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="/">
-                        <img src="assets/img/logo.png" alt="logo">
+                        <img src="{{asset('assets/img/logo.png')}}" alt="logo">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="single-footer-widget bg-f9f5f1">
                     <a href="index.html" class="logo">
-                        <img src="assets/img/white-logo.png" alt="Image">
+                        <img src="{{asset('assets/img/white-logo.png')}}" alt="Image">
                     </a>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas animi, minima velit corrupti fugit! Tenetur animi suscipit, reiciendis ad consectetur fugit</p>

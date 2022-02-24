@@ -29,7 +29,7 @@
 
                 <ul>
                     <li>
-                        <a href="index.html">
+                        <a href="/">
                             Home
                         </a>
                     </li>
