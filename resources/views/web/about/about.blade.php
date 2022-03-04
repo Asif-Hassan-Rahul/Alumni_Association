@@ -2,6 +2,25 @@
 
 @section('custom_css')
 
+    <style>
+        @media only screen and (min-width: 1200px)  {
+            .campus-content {
+                background-color: var(--main-color);
+                padding: 163px 49px;
+                padding-left: 26px;
+                position: relative;
+            }
+
+            .campus-content2 {
+                background-color: var(--main-color);
+                padding: 123px 49px;
+                padding-left: 26px;
+                position: relative;
+                margin-right: -24px;
+            }
+        }
+    </style>
+
 @endsection
 
 @section('content')
@@ -41,91 +60,111 @@
 
                 <div class="col-xl-6">
                     <div class="about-content ml-15">
-                        <span>About our university</span>
-                        <h2>Our education system inspires the next generation.</h2>
+{{--                        <span>About our Bueten</span>--}}
+                        <h2>About Bueten</h2>
 
-                        <p>Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                        <p style="text-align: justify">
+                            BUET is the most renowned Engineering University in Bangladesh. Graduates from this university perform their jobs in different reputed organizations in home and abroad. They also have plausible reputations in higher study and research in reputed universities throughout the world.
+                            <br>
 
-                        <a href="about.html" class="default-btn">
-                            Find out more
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
+                            This is essential to mention that, graduates from this institution continue their higher study and career in different faculties rather than their undergrad subjects. This is not a rare case nowadays. Therefore, many buet graduates are found continuing their career in Human Resource, Finance, Administration of different multinational organizations with great dignity, confidence and success.
+
+                        </p>
                     </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-xl-12 mt-3">
+                    <p style="text-align: justify">
+                        <h3 class="fw-bold">Why does this matter?</h3>
+                        From previous discussion, it is unambiguous that BUET graduates have tremendous potential and they are object oriented. Whatever the topic they deal with, they can perform very well. However, it is a fact that, number of BUET graduates in entrepreneurship is not satisfactory compared to their potential. So, nurturing and guidance is essential to flourish their latency.
+                        <br>
+
+                        <h3 class="fw-bold mt-1">Where is the correlation with this group?</h3>
+                        Members of this group will be assisted in diverse ways. A proverb goes that diamond cuts diamond. A BUET graduate will understand the exact requirement of another in the best way. They know the mentality of a BUETian.
+                        <br>
+
+                        Firstly, many BUET graduates have good technical knowledge of some specific field. He will share his knowledge with the potential person.
+                        Secondly, many might have assets from ancestors, from jobs or in any other ways. They may have the intention to invest but have no proper guidance and knowledge. So, they can easily seek assistance from this group members from different tracks.
+                        Thirdly, the incumbent may understand the sources of grants, investments from this group.
+                        Fourth, anybody may want a partnership with similar-minded people and this group will be a good option for him to find an exact match.There are endless ways to assist each other through this network.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <!-- End About Area -->
 
-    <!-- Start Counter Area -->
-    <section class="counter-area bg-color-f8fafb pt-100 pb-70">
-        <div class="container">
-            <div class="counter-bg">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-counter bg-style">
-                            <i class="flaticon-graduated"></i>
+{{--    <!-- Start Counter Area -->--}}
+{{--    <section class="counter-area bg-color-f8fafb pt-100 pb-70">--}}
+{{--        <div class="container">--}}
+{{--            <div class="counter-bg">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-lg-3 col-sm-6">--}}
+{{--                        <div class="single-counter bg-style">--}}
+{{--                            <i class="flaticon-graduated"></i>--}}
 
-                            <h2>
-                                <span class="odometer" data-count="4517">00</span>
-                            </h2>
-                            <h4>Students</h4>
-                        </div>
-                    </div>
+{{--                            <h2>--}}
+{{--                                <span class="odometer" data-count="4517">00</span>--}}
+{{--                            </h2>--}}
+{{--                            <h4>Students</h4>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-counter bg-style">
-                            <i class="flaticon-teacher"></i>
+{{--                    <div class="col-lg-3 col-sm-6">--}}
+{{--                        <div class="single-counter bg-style">--}}
+{{--                            <i class="flaticon-teacher"></i>--}}
 
-                            <div class="count-title">
-                                <h2>
-                                    <span class="odometer" data-count="640">00</span>
-                                </h2>
-                                <h4>Teachers</h4>
-                            </div>
-                        </div>
-                    </div>
+{{--                            <div class="count-title">--}}
+{{--                                <h2>--}}
+{{--                                    <span class="odometer" data-count="640">00</span>--}}
+{{--                                </h2>--}}
+{{--                                <h4>Teachers</h4>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-counter bg-style">
-                            <i class="flaticon-book-1"></i>
+{{--                    <div class="col-lg-3 col-sm-6">--}}
+{{--                        <div class="single-counter bg-style">--}}
+{{--                            <i class="flaticon-book-1"></i>--}}
 
-                            <div class="count-title">
-                                <h2>
-                                    <span class="odometer" data-count="54">00</span>
-                                </h2>
-                                <h4>Subjects</h4>
-                            </div>
-                        </div>
-                    </div>
+{{--                            <div class="count-title">--}}
+{{--                                <h2>--}}
+{{--                                    <span class="odometer" data-count="54">00</span>--}}
+{{--                                </h2>--}}
+{{--                                <h4>Subjects</h4>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-counter bg-style">
-                            <i class="flaticon-graduation-cap"></i>
+{{--                    <div class="col-lg-3 col-sm-6">--}}
+{{--                        <div class="single-counter bg-style">--}}
+{{--                            <i class="flaticon-graduation-cap"></i>--}}
 
-                            <div class="count-title">
-                                <h2>
-                                    <span class="odometer" data-count="269">00</span>
-                                </h2>
-                                <h4>Degrees</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                            <div class="count-title">--}}
+{{--                                <h2>--}}
+{{--                                    <span class="odometer" data-count="269">00</span>--}}
+{{--                                </h2>--}}
+{{--                                <h4>Degrees</h4>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="shape counter-shape-1">
-                    <img src="{{asset('assets/img/counter-shape-1.png')}}" alt="Image">
-                </div>
-                <div class="shape counter-shape-2">
-                    <img src="{{asset('assets/img/counter-shape-2.png')}}" alt="Image">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Counter Area -->
+{{--                <div class="shape counter-shape-1">--}}
+{{--                    <img src="{{asset('assets/img/counter-shape-1.png')}}" alt="Image">--}}
+{{--                </div>--}}
+{{--                <div class="shape counter-shape-2">--}}
+{{--                    <img src="{{asset('assets/img/counter-shape-2.png')}}" alt="Image">--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
+{{--    <!-- End Counter Area -->--}}
 
     <!-- Start Our Campus Information Area -->
-    <section class="our-campus-information-area ptb-100">
+    <section class="our-campus-information-area my-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-7">
@@ -136,14 +175,11 @@
 
                 <div class="col-xl-5">
                     <div class="campus-content">
-                        <span>Our campus information</span>
-                        <h2>We are proud that more than 50 students from different nationalities study on our campus</h2>
-                        <p>Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.</p>
-
-                        <a href="campus-information.html" class="read-more">
-                            Find out more
-                            <span class="ri-arrow-right-line"></span>
-                        </a>
+{{--                        <span>Our campus information</span>--}}
+                        <h2>Our Vision</h2>
+                        <p>
+                            Mission of this group is to create more entrepreneurs from BUET graduates. They will add value to the national economy. This will be a common guiding and supporting platform for BUET graduates. They will have the option for switching business in diversified sectors.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -151,144 +187,33 @@
     </section>
     <!-- End Our Campus Information Area -->
 
-    <!-- Start Team Area -->
-    <section class="team-area team-area-three pb-70">
+
+    <!-- Start Our Campus Information Area -->
+    <section class="our-campus-information-area my-5">
         <div class="container">
-            <div class="section-title">
-                <h2>Our professors</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-            </div>
+            <div class="row align-items-center">
 
-            <div class="row justify-content-md-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-team-member">
-                        <img src="{{asset('assets/img/team/team-1.jpg')}}" alt="Image">
-
-                        <div class="team-content">
-                            <div class="team-social">
-                                <a href="#" class="control">
-                                    <i class="ri-share-fill"></i>
-                                </a>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/" target="_blank">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="team-name">
-                                <h3>DAndrew M. Nichols</h3>
-                                <span>MCA, PHD</span>
-                            </div>
-                        </div>
+                <div class="col-xl-5">
+                    <div class="campus-content campus-content2" style="overflow: hidden">
+                        {{--                        <span>Our campus information</span>--}}
+                        <h2>Our Mission</h2>
+                        <p>
+                            This group is a convenient platform for cooperation between entrepreneurs  having different interests. This group shall be an all in all supporting center for a newcomer in business by eliminating all types of shortcomings faced by him. To achieve this, BUET graduates are able to get technical support, share knowledge, seek grants and investment, understand market Opportunities, help others and anything else according to contemporary demand and availability. There will not be any bindings in doing business.
+                        </p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-team-member">
-                        <img src="{{asset('assets/img/team/team-2.jpg')}}" alt="Image">
-
-                        <div class="team-content">
-                            <div class="team-social">
-                                <a href="#" class="control">
-                                    <i class="ri-share-fill"></i>
-                                </a>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/" target="_blank">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="team-name">
-                                <h3>Chandra Ferrante</h3>
-                                <span>Assistant Professor</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-team-member">
-                        <img src="{{asset('assets/img/team/team-3.jpg')}}" alt="Image">
-
-                        <div class="team-content">
-                            <div class="team-social">
-                                <a href="#" class="control">
-                                    <i class="ri-share-fill"></i>
-                                </a>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/" target="_blank">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="team-name">
-                                <h3>William Johnston</h3>
-                                <span>PHD, Medical Sciences</span>
-                            </div>
-                        </div>
+                <div class="col-xl-7">
+                    <div class="campus-img">
+                        <img src="{{asset('assets/img/campus-img.jpg')}}" alt="Image">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Team Area -->
+    <!-- End Our Campus Information Area -->
+
+
 
     <!-- Start Campus Experience Area -->
     <section class="campus-experience-area-style pb-100">

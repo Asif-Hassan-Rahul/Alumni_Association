@@ -5,11 +5,11 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="banner-content">
-                            <span>Welcome to Unco</span>
+                            <span>Welcome to Bueten</span>
                             <h1>A BUET ALUMNI education is applicable for building the future</h1>
 
                             <div class="banner-btn">
-                                <a href="events.html" class="default-btn">
+                                <a href="{{route('events')}}" class="default-btn">
                                     Check event
                                     <i class="ri-arrow-right-line"></i>
                                 </a>
@@ -30,7 +30,7 @@
 
                     <div class="col-lg-6">
                         <div class="banner-img">
-                            <img src="assets/img/banner/banner-img-1.jpg" alt="Image">
+                            <img src="{{asset('assets/img/banner/Convocation.jpg')}}" alt="Image" style="height: 636px; width: 636px; object-fit: cover;">
                         </div>
                     </div>
                 </div>

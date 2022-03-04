@@ -3,18 +3,18 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="about-img mr-15">
-                    <img src="assets/img/about-img.jpg" alt="Image">
+                    <img src="{{asset('assets/img/banner/banner-bg-1.jpg')}}" alt="Image" style="height: 397px; width: 556px; object-fit: cover">
                 </div>
             </div>
 
             <div class="col-lg-6">
                 <div class="about-content ml-15">
-                    <span>About our university</span>
+                    <span>About Bueten</span>
                     <h2>Our education system inspires the next generation</h2>
 
-                    <p>Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                    <p>BUET is the most renowned Engineering University in Bangladesh. Graduates from this university perform their jobs in different reputed organizations in home and abroad. They also have plausible reputations in higher study and research in reputed universities throughout the world.This is essential to mention that, graduates from this institution continue their higher study and career in different faculties rather than their undergrad subjects. This is not a rare case nowadays. Therefore, many buet graduates are found continuing their career in Human Resource, Finance, Administration of different multinational organizations with great dignity, confidence and success.</p>
 
-                    <a href="about.html" class="default-btn">
+                    <a href="{{route('about')}}" class="default-btn">
                         Find out more
                         <i class="ri-arrow-right-line"></i>
                     </a>

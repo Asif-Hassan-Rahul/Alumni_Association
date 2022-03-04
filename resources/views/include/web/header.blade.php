@@ -6,43 +6,43 @@
                 <div class="col-lg-6 col-sm-6">
                     <ul class="header-left-content">
                         <li>
-                            <a href="tel:+1-(514)-312-5678">
+                            <a href="tel:+880">
                                 <i class="ri-phone-fill"></i>
-                                +1 (514) 312-5678
+                                +880 1700000000
                             </a>
                         </li>
-                        <li>
-                            <a href="mailto:info@unco.com">
-                                <i class="fa-solid fa-envelope"></i>
-                                info@unco.com
-                            </a>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a href="mailto:info@bueten.org">--}}
+{{--                                <i class="fa-solid fa-envelope"></i>--}}
+{{--                                info@bueten.org--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
                     </ul>
                 </div>
 
                 <div class="col-lg-6 col-sm-6">
                     <div class="header-right-content">
-                        <div class="languages-switcher">
-                            <i class="ri-global-line"></i>
-                            <select>
-                                <option value="1">English</option>
-                                <option value="2">العربيّة</option>
-                                <option value="3">Deutsch</option>
-                                <option value="4">Português</option>
-                                <option value="5">简体中文</option>
-                            </select>
-                        </div>
+{{--                        <div class="languages-switcher">--}}
+{{--                            <i class="ri-global-line"></i>--}}
+{{--                            <select>--}}
+{{--                                <option value="1">English</option>--}}
+{{--                                <option value="2">العربيّة</option>--}}
+{{--                                <option value="3">Deutsch</option>--}}
+{{--                                <option value="4">Português</option>--}}
+{{--                                <option value="5">简体中文</option>--}}
+{{--                            </select>--}}
+{{--                        </div>--}}
 
-                        <div class="my-account">
-                            <a href="my-account.html">
-                                <i class="ri-user-fill"></i>
-                            </a>
-                        </div>
+{{--                        <div class="my-account">--}}
+{{--                            <a href="my-account.html">--}}
+{{--                                <i class="ri-user-fill"></i>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
 
-                        <div class="cart-icon">
-                            <a href="cart.html">
-                                <i class="ri-shopping-cart-line"></i>
-                                <span>03</span>
+                        <div class="cart-icon" style="top:unset;">
+                            <a href="mailto:info@bueten.org" class="text-white">
+                                <i class="fa-solid fa-envelope"></i>
+                                info@bueten.org
                             </a>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                 <div class="mobile-responsive-menu">
                     <div class="logo">
                         <a href="/">
-                            <img src="{{asset('assets/img/logo.png')}}" alt="logo">
+                            <img height="140" src="{{asset('assets/img/BUET_LOGO.png')}}" alt="logo">
                         </a>
                     </div>
 
@@ -85,7 +85,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="/">
-                        <img src="{{asset('assets/img/logo.png')}}" alt="logo">
+                        <img  src="{{asset('assets/img/BUET_LOGO.png')}}" alt="logo" style=" width: 85px!important;">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -114,15 +114,33 @@
                                 </a>
                             </li>
 
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Success Stories
+                                </a>
+                            </li>
+
+                            <li class="nav-item" {{ request()->is('blogs_front') ? 'active' : ''}}>
+                                <a href="{{route('blogs_front')}}" class="nav-link">
+                                    Blogs
+                                </a>
+                            </li>
+
                             <li class="nav-item {{ request()->is('events') ? 'active' : ''}}">
                                 <a href="{{route('events')}}" class="nav-link">
-                                    Events
+                                    News & Events
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                   Gallery
                                 </a>
                             </li>
 
                             <li class="nav-item {{ request()->is('alumni') ? 'active' : ''}}">
                                 <a href="{{route('alumni')}}" class="nav-link">
-                                    Alumni
+                                    Members
                                 </a>
                             </li>
 
@@ -146,84 +164,84 @@
 {{--                                </ul>--}}
 {{--                            </li>--}}
 
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Pages
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </a>
+{{--                            <li class="nav-item">--}}
+{{--                                <a href="#" class="nav-link">--}}
+{{--                                    Pages--}}
+{{--                                    <i class="ri-arrow-down-s-line"></i>--}}
+{{--                                </a>--}}
 
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="about.html" class="nav-link">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="application.html" class="nav-link">Application form</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="our-professors.html" class="nav-link">Our professors</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            Campus
-                                            <i class="ri-arrow-down-s-line"></i>
-                                        </a>
+{{--                                <ul class="dropdown-menu">--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="about.html" class="nav-link">About</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="application.html" class="nav-link">Application form</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="our-professors.html" class="nav-link">Our professors</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="#" class="nav-link">--}}
+{{--                                            Campus--}}
+{{--                                            <i class="ri-arrow-down-s-line"></i>--}}
+{{--                                        </a>--}}
 
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="campus-information.html" class="nav-link">Campus information</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="campus-experience.html" class="nav-link">Campus experience</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="alumni.html" class="nav-link">Alumni</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="study-online.html" class="nav-link">Study online</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="admissions.html" class="nav-link">Admissions</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="faq.html" class="nav-link">FAQ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="gallery.html" class="nav-link">Gallery</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            User
-                                            <i class="ri-arrow-down-s-line"></i>
-                                        </a>
+{{--                                        <ul class="dropdown-menu">--}}
+{{--                                            <li class="nav-item">--}}
+{{--                                                <a href="campus-information.html" class="nav-link">Campus information</a>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="nav-item">--}}
+{{--                                                <a href="campus-experience.html" class="nav-link">Campus experience</a>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="nav-item">--}}
+{{--                                                <a href="alumni.html" class="nav-link">Alumni</a>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="nav-item">--}}
+{{--                                                <a href="study-online.html" class="nav-link">Study online</a>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="nav-item">--}}
+{{--                                                <a href="admissions.html" class="nav-link">Admissions</a>--}}
+{{--                                            </li>--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="faq.html" class="nav-link">FAQ</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="gallery.html" class="nav-link">Gallery</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="#" class="nav-link">--}}
+{{--                                            User--}}
+{{--                                            <i class="ri-arrow-down-s-line"></i>--}}
+{{--                                        </a>--}}
 
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="my-account.html" class="nav-link">My account</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="log-in.html" class="nav-link">Log in</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="register.html" class="nav-link">Register</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="privacy-policy.html" class="nav-link">Privacy policy</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="terms-conditions.html" class="nav-link">Terms & conditions</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="coming-soon.html" class="nav-link">Coming soon</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="404.html" class="nav-link">404 Page</a>
-                                    </li>
-                                </ul>
-                            </li>
+{{--                                        <ul class="dropdown-menu">--}}
+{{--                                            <li class="nav-item">--}}
+{{--                                                <a href="my-account.html" class="nav-link">My account</a>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="nav-item">--}}
+{{--                                                <a href="log-in.html" class="nav-link">Log in</a>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="nav-item">--}}
+{{--                                                <a href="register.html" class="nav-link">Register</a>--}}
+{{--                                            </li>--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="privacy-policy.html" class="nav-link">Privacy policy</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="terms-conditions.html" class="nav-link">Terms & conditions</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="coming-soon.html" class="nav-link">Coming soon</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a href="404.html" class="nav-link">404 Page</a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </li>--}}
 
 {{--                            <li class="nav-item">--}}
 {{--                                <a href="#" class="nav-link">--}}
@@ -266,24 +284,6 @@
 {{--                                </ul>--}}
 {{--                            </li>--}}
 
-                            <li class="nav-item">
-                                <a href="{{route('blogs_front')}}" class="nav-link">
-                                    Blogs
-{{--                                    <i class="ri-arrow-down-s-line"></i>--}}
-                                </a>
-
-{{--                                <ul class="dropdown-menu">--}}
-{{--                                    <li class="nav-item">--}}
-{{--                                        <a href="blog.html" class="nav-link">Blog</a>--}}
-{{--                                    </li>--}}
-{{--                                    <li class="nav-item">--}}
-{{--                                        <a href="blog-left-sidebar.html" class="nav-link">Blog left sidebar</a>--}}
-{{--                                    </li>--}}
-{{--                                    <li class="nav-item">--}}
-{{--                                        <a href="blog-details.html" class="nav-link">Blog details</a>--}}
-{{--                                    </li>--}}
-{{--                                </ul>--}}
-                            </li>
 
                             <li class="nav-item {{ request()->is('contact') ? 'active' : ''}}">
                                 <a href="{{route('contact')}}" class="nav-link">Contact</a>
@@ -301,13 +301,17 @@
                                         <a href="{{route('login')}}" class="default-btn">
                                             Login
                                         </a>
+
+                                        <a href="{{route('register')}}" class="default-btn">
+                                            Register
+                                        </a>
                                     @endif
                                 </li>
-                                <li>
-                                    <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-target="#exampleModalsrc">
-                                        <i class="ri-search-line"></i>
-                                    </button>
-                                </li>
+{{--                                <li>--}}
+{{--                                    <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-target="#exampleModalsrc">--}}
+{{--                                        <i class="ri-search-line"></i>--}}
+{{--                                    </button>--}}
+{{--                                </li>--}}
                             </ul>
                         </div>
                     </div>

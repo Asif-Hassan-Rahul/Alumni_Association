@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="single-footer-widget bg-f9f5f1">
                     <a href="index.html" class="logo">
-                        <img src="{{asset('assets/img/white-logo.png')}}" alt="Image">
+                        <img src="{{asset('assets/img/BUET_LOGO.png')}}" alt="Image">
                     </a>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas animi, minima velit corrupti fugit! Tenetur animi suscipit, reiciendis ad consectetur fugit</p>
@@ -98,12 +98,12 @@
                         <li>
                             <i class="ri-mail-line"></i>
                             <span>Email</span>
-                            <a href="mailto:info@unco.com">info@unco.com</a>
+                            <a href="mailto:info@bueten.com">info@bueten.com</a>
                         </li>
                         <li>
                             <i class="ri-phone-line"></i>
                             <span>Phone</span>
-                            <a href="tel:+1-(514)-312-5678">+1 (514) 312-5678</a>
+                            <a href="tel:+1-(514)-312-5678">+880 1700000000</a>
                         </li>
                     </ul>
                 </div>
