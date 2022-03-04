@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="about-img mr-15">
-                    <img src="{{asset('assets/img/banner/banner-bg-1.jpg')}}" alt="Image" style="height: 397px; width: 556px; object-fit: cover">
+                    <img src="{{asset('assets/img/banner/main-banner.jpg')}}" alt="Image" style="height: 397px; width: 556px; object-fit: cover">
                 </div>
             </div>
 
