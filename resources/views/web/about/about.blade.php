@@ -18,6 +18,12 @@
                 position: relative;
                 margin-right: -24px;
             }
+
+            .campus-img img{
+                width: 735px;
+                height: 552px;
+                object-fit: cover;
+            }
         }
     </style>
 
@@ -50,7 +56,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-6">
                     <div class="about-img-two mr-15">
-                        <img src="{{asset('assets/img/about-img-2.jpg')}}" alt="Image">
+                        <img src="{{asset('assets/img/banner/buet_auditorium.jpg')}}" alt="Image">
 
                         <div class="about-shape">
                             <img src="{{asset('assets/img/about-shape.png')}}" alt="Image">
@@ -169,7 +175,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-7">
                     <div class="campus-img">
-                        <img src="{{asset('assets/img/campus-img.jpg')}}" alt="Image">
+                        <img src="{{asset('assets/img/banner/buet_mosque.jpg')}}" alt="Image">
                     </div>
                 </div>
 
@@ -205,7 +211,7 @@
 
                 <div class="col-xl-7">
                     <div class="campus-img">
-                        <img src="{{asset('assets/img/campus-img.jpg')}}" alt="Image">
+                        <img src="{{asset('assets/img/banner/buet_auditorium_2.jpg')}}" alt="Image">
                     </div>
                 </div>
             </div>
