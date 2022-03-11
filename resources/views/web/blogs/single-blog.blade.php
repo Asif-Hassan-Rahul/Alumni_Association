@@ -37,9 +37,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="blog-details-content mr-15">
+                        @if($blogs->full_image != null)
                         <div class="blog-details-img">
                             <img src="{{ asset('storage/'.$blog->full_image)}}" alt="Image">
                         </div>
+                        @endif
 
                         <div class="blog-top-content">
                             <div class="blog-content">
