@@ -97,6 +97,33 @@
                                         </select>
                                     </div>
                                 </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="department">Department <span
+                                                class="text-danger font-weight-bold">*</span></label>
+                                        <select id="department" name="department" class="form-select form-control" aria-label="Default select example">
+                                            <option selected>Select Department</option>
+                                            <option value="1">Department 1</option>
+                                            <option value="2">Department 2</option>
+                                            <option value="3">Department 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="hall">Hall <span
+                                                class="text-danger font-weight-bold">*</span></label>
+                                        <select id="hall" name="hall" class="form-select form-control" aria-label="Default select example">
+                                            <option selected>Select Hall</option>
+                                            <option value="1">Hall 1</option>
+                                            <option value="2">Hall 2</option>
+                                            <option value="3">Hall 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="dob">Date of Birth <span
@@ -628,6 +655,8 @@
             document.getElementById("gender").value = "{{$alumni->gender}}";
             document.getElementById("country").value = "{{$alumni->country}}";
             document.getElementById("batch").value = "{{$alumni->batch}}";
+            document.getElementById("department").value = "{{$alumni->department}}";
+            document.getElementById("hall").value = "{{$alumni->hall}}";
             document.getElementById("profession_type").value = "{{$alumni->profession_type}}";
             document.getElementById("dob").value = "{{(new DateTime($alumni->dob))->format("Y-m-d")}}";
             console.log('hello');

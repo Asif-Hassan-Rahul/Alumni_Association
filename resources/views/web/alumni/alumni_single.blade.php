@@ -33,12 +33,8 @@
                     <div class="card mb-3" style="border-radius: .5rem;">
                         <div class="row g-0">
                             <div class="col-md-4 gradient-custom text-center text-white" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
-                                <img
-                                    src="{{ $alumni_data->user->photo_url != null ? url('storage'.$alumni_data->user->photo_url):'/assets/img/null/avatar.jpg'}}"
-                                    alt="Avatar"
-                                    class="img-fluid my-3"
-                                    style="width: 209px; border-radius: 200px"
-                                />
+{{--                                {{dd($alumni_data->user->photo_url)}}--}}
+                                <img src="{{ $alumni_photo != null ? url('storage'.$alumni_photo):'/assets/img/null/avatar.jpg'}}" alt="Avatar" class="img-fluid my-3" style="width: 209px; border-radius: 200px"/>
                                 <h5>{{$alumni_data->name}}</h5>
                                 <p class="text-black">{{$alumni_data->designation}}</p>
                             </div>

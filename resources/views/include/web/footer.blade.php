@@ -78,9 +78,9 @@
                         <li>
                             <a href="campus-information.html">Study on campus</a>
                         </li>
-                        <li>
-                            <a href="tuition-fees.html">Fees and costs</a>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a href="tuition-fees.html">Fees and costs</a>--}}
+{{--                        </li>--}}
                     </ul>
                 </div>
             </div>
@@ -100,11 +100,11 @@
                             <span>Email</span>
                             <a href="mailto:info@bueten.com">info@bueten.com</a>
                         </li>
-                        <li>
-                            <i class="ri-phone-line"></i>
-                            <span>Phone</span>
-                            <a href="tel:+1-(514)-312-5678">+880 1700000000</a>
-                        </li>
+{{--                        <li>--}}
+{{--                            <i class="ri-phone-line"></i>--}}
+{{--                            <span>Phone</span>--}}
+{{--                            <a href="tel:+1-(514)-312-5678">+880 1700000000</a>--}}
+{{--                        </li>--}}
                     </ul>
                 </div>
             </div>

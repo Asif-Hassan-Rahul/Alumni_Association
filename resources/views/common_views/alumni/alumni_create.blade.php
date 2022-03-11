@@ -30,7 +30,7 @@
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="buet_id">BUET ID <span class="text-danger font-weight-bold">*</span></label>
-                                        <input type="number" id="buet_id" class="form-control" name="buet_id">
+                                        <input type="number" id="buet_id" class="form-control" name="buet_id" value="{{\Illuminate\Support\Facades\Auth::user()->buet_id}}">
                                     </div>
                                 </div>
 
@@ -96,6 +96,33 @@
                                         </select>
                                     </div>
                                 </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="department">Department <span
+                                                class="text-danger font-weight-bold">*</span></label>
+                                        <select id="department" name="department" class="form-select form-control" aria-label="Default select example">
+                                            <option selected>Select Department</option>
+                                            <option value="1">Department 1</option>
+                                            <option value="2">Department 2</option>
+                                            <option value="3">Department 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="hall">Hall <span
+                                                class="text-danger font-weight-bold">*</span></label>
+                                        <select id="hall" name="hall" class="form-select form-control" aria-label="Default select example">
+                                            <option selected>Select Hall</option>
+                                            <option value="1">Hall 1</option>
+                                            <option value="2">Hall 2</option>
+                                            <option value="3">Hall 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
                                         <label for="dob">Date of Birth <span
@@ -614,4 +641,16 @@
         </div>
     </div>
 
+@endsection
+
+@section('extra_js')
+
+    <script>
+
+        $(window).on('load', function () {
+            document.getElementById("batch").value = "{{\Illuminate\Support\Facades\Auth::user()->batch}}";
+            document.getElementById("department").value = "{{\Illuminate\Support\Facades\Auth::user()->department}}";
+        });
+
+    </script>
 @endsection

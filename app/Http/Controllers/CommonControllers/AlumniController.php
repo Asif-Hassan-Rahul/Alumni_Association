@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Alumni;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Spatie\Permission\Traits\HasPermissions;
 use Spatie\Permission\Traits\HasRoles;
 
@@ -57,8 +58,10 @@ class AlumniController extends Controller
 
 
         $alumni = new Alumni();
+        $user = Auth::user();
         $alumni->user_id = $request->user_id;
         $alumni->buet_id = $request->buet_id;
+        $user->buet_id = $request->buet_id;
         $alumni->name = User::find($request->user_id)->name;
         $alumni->email = User::find($request->user_id)->email;
         $alumni->phone1 = User::find($request->user_id)->phone;
@@ -66,6 +69,10 @@ class AlumniController extends Controller
         $alumni->facebook_id = $request->facebook_id;
         $alumni->linkedin_id = $request->linkedin_id;
         $alumni->batch = $request->batch;
+        $user->batch = $request->batch;
+        $alumni->department = $request->department;
+        $user->department = $request->department;
+        $alumni->hall = $request->hall;
         $alumni->permanent_address = $request->permanent_address;
         $alumni->professional_address = $request->professional_address;
         $alumni->blood_group = $request->blood_group;
@@ -88,6 +95,7 @@ class AlumniController extends Controller
 
 
         $alumni->save();
+        $user->save();
 
         //GETS AN INSTANCE OF THE NEW USER
         $newAlumni = User::find($request->user_id);
@@ -160,10 +168,15 @@ class AlumniController extends Controller
 //        $batch = Helper::calculate_alumni_batch($request->ssc_passing_year,$request->hsc_passing_year);
 
 
+
+
         $alumni_id = $request->alumni_id;
         $alumni = Alumni::find($alumni_id);
+
+        $user = Auth::user();
         $alumni->user_id = $request->user_id;
         $alumni->buet_id = $request->buet_id;
+        $user->buet_id = $request->buet_id;
         $alumni->name = User::find($request->user_id)->name;
         $alumni->email = User::find($request->user_id)->email;
         $alumni->phone1 = User::find($request->user_id)->phone;
@@ -171,6 +184,10 @@ class AlumniController extends Controller
         $alumni->facebook_id = $request->facebook_id;
         $alumni->linkedin_id = $request->linkedin_id;
         $alumni->batch = $request->batch;
+        $user->batch = $request->batch;
+        $alumni->department = $request->department;
+        $user->department = $request->department;
+        $alumni->hall = $request->hall;
         $alumni->permanent_address = $request->permanent_address;
         $alumni->professional_address = $request->professional_address;
         $alumni->blood_group = $request->blood_group;
@@ -193,6 +210,7 @@ class AlumniController extends Controller
 
 
         $alumni->save();
+        $user->save();
 
         return back()->with('success','Success : Information Updated Successfully');
     }
@@ -220,9 +238,11 @@ class AlumniController extends Controller
 
     public function getSingleAlumniFrontEnd($alumni_id){
         $alumni_data = Alumni::find($alumni_id)->first();
+        $alumni_photo = $alumni_data->user->photo_url;
 
         return view('web.alumni.alumni_single')->with([
             'alumni_data'=>$alumni_data,
+            'alumni_photo'=>$alumni_photo,
         ]);
     }
 

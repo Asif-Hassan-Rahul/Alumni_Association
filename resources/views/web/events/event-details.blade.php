@@ -32,33 +32,33 @@
                 <div class="col-lg-8">
                     <div class="main-default-content mr-15">
                         <span class="top-title">Conference</span>
-                        <h2>Universities admission conference 2021</h2>
+                        <h2>Working Group formed for BUETEN</h2>
 
                         <ul class="date-time">
                             <li>
                                 <i class="ri-calendar-2-line"></i>
-                                01, May 2021
+                                11, March 2022
                             </li>
                             <li>
                                 <i class="ri-time-line"></i>
-                                Friday 3:00PM - 5:00PM
+                                Saturday 3:00PM - 5:00PM
                             </li>
-                            <li>
-                                <i class="ri-map-pin-2-line"></i>
-                                London, UK
-                            </li>
+{{--                            <li>--}}
+{{--                                <i class="ri-map-pin-2-line"></i>--}}
+{{--                                London, UK--}}
+{{--                            </li>--}}
                         </ul>
 
                         <div class="gap-20"></div>
 
-                        <img src="{{asset('assets/img/event-details-img.jpg')}}" alt="Image">
+                        <img src="{{asset('assets/img/event/event-details.jpg')}}" alt="Image">
 
                         <div class="gap-20"></div>
 
-                        <h3>Event Description</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has svived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.Risus commodo viverra maec enas ccumsan lacus vel facilisis.Curabitur aliquet quam id dui posuere blandit.</p>
+{{--                        <h3>Event Description</h3>--}}
+                        <p>A working group having businessmen, job holders and experts has been created.They meet Saturday in every week to co-operate the developmental activities of the group. There are several sub-groups with relevant people that have been created to expedite activities.</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accu msan id imperdiet et, porttitor at sem.</p>
+                        <p>A “Monthly Adda” discussion session is arranged each month among the members of the entrepreneur network. Members share their opinions, ideas, problems, opportunities etc among the members. Therefore, potential members get a clear view of their intended activities.</p>
 
                     </div>
                 </div>
@@ -71,11 +71,11 @@
                             <ul>
                                 <li>
                                     Start
-                                    <span>1st May 2021</span>
+                                    <span>11, March 2022</span>
                                 </li>
                                 <li>
                                     End
-                                    <span>1st May 2021</span>
+                                    <span>11, March 2022</span>
                                 </li>
                                 <li>
                                     Event Category
@@ -83,20 +83,20 @@
                                 </li>
                                 <li>
                                     Location
-                                    <span>London</span>
+                                    <span>Bangladesh</span>
                                 </li>
                                 <li>
                                     Total slot
-                                    <span>100</span>
+                                    <span>N/A</span>
                                 </li>
                                 <li>
                                     Booked Slot
-                                    <span>0</span>
+                                    <span>N/A</span>
                                 </li>
-                                <li>
-                                    Website
-                                    <a href="index.html">www.unco.com</a>
-                                </li>
+{{--                                <li>--}}
+{{--                                    Website--}}
+{{--                                    <a href="index.html">www.unco.com</a>--}}
+{{--                                </li>--}}
                             </ul>
                         </div>
                     </div>

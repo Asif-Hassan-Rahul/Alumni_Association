@@ -64,7 +64,7 @@
             </div>
 
             <div class="row" id="alumni_data">
-                @include('web.alumni.alumni-data')
+                @include('web.alumni.alumni_data')
 
 
 {{--                <div >--}}

@@ -5,12 +5,12 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-6">
                     <ul class="header-left-content">
-                        <li>
-                            <a href="tel:+880">
-                                <i class="ri-phone-fill"></i>
-                                +880 1700000000
-                            </a>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a href="tel:+880">--}}
+{{--                                <i class="ri-phone-fill"></i>--}}
+{{--                                +880 1700000000--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
 {{--                        <li>--}}
 {{--                            <a href="mailto:info@bueten.org">--}}
 {{--                                <i class="fa-solid fa-envelope"></i>--}}

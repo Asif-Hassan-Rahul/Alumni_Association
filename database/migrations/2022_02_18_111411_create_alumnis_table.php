@@ -36,6 +36,8 @@ class CreateAlumnisTable extends Migration
             $table->string('area_of_interest')->nullable();
             $table->string('professional_address')->nullable();
             $table->string('batch')->nullable();
+            $table->string('department')->nullable();
+            $table->string('hall')->nullable();
             $table->string('blood_group')->nullable();
             $table->string('marital_status')->nullable();
             $table->string('spouse_name')->nullable();

@@ -37,7 +37,7 @@
     <!-- End Simple Steps Area -->
 
     <!-- Start Events Area -->
-    @include('web.home.events')
+{{--    @include('web.home.events')--}}
     <!-- End Events Area -->
 
     <!-- Stat Admission Area -->
