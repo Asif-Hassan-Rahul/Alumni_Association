@@ -25,7 +25,7 @@
     <!-- End About Area -->
 
     <!-- Start Study Area -->
-    @include('web.home.study')
+{{--    @include('web.home.study')--}}
     <!-- End Study Area -->
 
     <!-- Start Our Campus Information Area -->
@@ -33,7 +33,7 @@
     <!-- End Our Campus Information Area -->
 
     <!-- Start Simple Steps Area -->
-    @include('web.home.simple-steps')
+{{--    @include('web.home.simple-steps')--}}
     <!-- End Simple Steps Area -->
 
     <!-- Start Events Area -->
@@ -41,7 +41,7 @@
     <!-- End Events Area -->
 
     <!-- Stat Admission Area -->
-    @include('web.home.admission')
+{{--    @include('web.home.admission')--}}
     <!-- End Admission Area -->
 
     <!-- Start Find A Courses Area -->
