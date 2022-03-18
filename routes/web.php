@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\BlogCategoryController;
+use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\ManageGalleryController;
 use App\Http\Controllers\Admin\ManageRolesController;
 use App\Http\Controllers\Admin\ManageUsersController;
 use App\Http\Controllers\CommonControllers\DashboardController;
@@ -107,10 +110,26 @@ Route::POST('/manage-ex-students/update-alumni-status', [ExStudentController::cl
 -----------------------------------------------------------
 */
 
-Route::resource('/blogs', \App\Http\Controllers\Admin\BlogController::class)->middleware('auth');
-Route::resource('blog_categories', \App\Http\Controllers\Admin\BlogCategoryController::class)->middleware('auth');
-Route::get('/blogs-front', [\App\Http\Controllers\Admin\BlogController::class,'home_blogs'])->name('blogs_front');
-Route::get('/blog/{blog_id}', [\App\Http\Controllers\Admin\BlogController::class, 'single_blog'])->name('single_blog');
+Route::resource('/blogs', BlogController::class)->middleware('auth');
+Route::resource('blog_categories', BlogCategoryController::class)->middleware('auth');
+Route::get('/blogs-front', [BlogController::class,'home_blogs'])->name('blogs_front');
+Route::get('/blog/{blog_id}', [BlogController::class, 'single_blog'])->name('single_blog');
 
 
+/*
+-----------------------------------------------------------
+ ==== Manage Gallery Here  ===
+-----------------------------------------------------------
+*/
 
+//Route::resource('/gallery', ManageGalleryController::class)->middleware('auth');
+
+Route::GET('/gallery-index', [ManageGalleryController::class,'index'])->name('gallery_index');
+Route::post('/create-photo-album',[ManageGalleryController::class,'create'])->name('create_photo_album');
+Route::post('/edit-photo-album',[\App\Http\Controllers\Admin\ManageGalleryController::class,'update'])->name('edit_photo_album');
+Route::GET('/gallery-show/{id}', [\App\Http\Controllers\Admin\ManageGalleryController::class,'show'])->name('gallery_show');
+Route::GET('/gallery-upload-page/{id}', [\App\Http\Controllers\Admin\ManageGalleryController::class,'goto_upload'])->name('gallery_upload');
+Route::post('/delete-photo-album', [\App\Http\Controllers\Admin\ManageGalleryController::class,'destroy'])->name('delete_photo_album');
+Route::post('/photo-upload/', [\App\Http\Controllers\Admin\ManageGalleryController::class,'store'])->name('photo_upload');
+Route::post('/delete-photo', [\App\Http\Controllers\Admin\ManageGalleryController::class,'delete_photo'])->name('delete_photo');
+Route::GET('/gallery-show-frontend/{id}', [\App\Http\Controllers\LandingControllers\GalleryController::class,'showIndividualAlbum'])->name('gallery_show_frontend');

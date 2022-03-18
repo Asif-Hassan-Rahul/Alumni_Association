@@ -104,6 +104,13 @@
                                     <p>Blogs</p>
                                 </a>
                             </li>
+
+                            <li class="nav-item">
+                                <a href="{{route('gallery_index')}}" class="nav-link">
+                                    <i class="fa fa-images nav-icon"></i>
+                                    <p>Gallery</p>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 @endcan
