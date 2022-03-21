@@ -45,16 +45,16 @@
     <!-- End Admission Area -->
 
     <!-- Start Find A Courses Area -->
-    @include('web.home.find-course')
+{{--    @include('web.home.find-course')--}}
     <!-- End Find A Courses Area -->
 
     <!-- Start Campus Experience Area -->
-    @include('web.home.campus-experience')
+{{--    @include('web.home.campus-experience')--}}
     <!-- End Campus Experience Area -->
 
-    <!-- Start Blog Area -->
-    @include('web.home.blog')
-    <!-- End Blog Area -->
+    <!-- Start News Area -->
+    @include('web.home.news')
+    <!-- End News Area -->
 
 @endsection
 

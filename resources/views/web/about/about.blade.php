@@ -171,20 +171,24 @@
 
     <!-- Start Our Campus Information Area -->
     <section class="our-campus-information-area my-5">
-        <div class="container">
+        <div class="container" style="background-color: #92210f">
             <div class="row align-items-center">
-                <div class="col-xl-7">
+                <div class="col-xl-7 p-0">
                     <div class="campus-img">
                         <img src="{{asset('assets/img/banner/buet_mosque.jpg')}}" alt="Image">
                     </div>
                 </div>
 
                 <div class="col-xl-5">
-                    <div class="campus-content">
+                    <div class="campus-content py-0 px-5">
 {{--                        <span>Our campus information</span>--}}
                         <h2>Our Vision</h2>
                         <p>
-                            Mission of this group is to create more entrepreneurs from BUET graduates. They will add value to the national economy. This will be a common guiding and supporting platform for BUET graduates. They will have the option for switching business in diversified sectors.
+                            Connecting BUETian Entrepreneurs for better collaboration to produce greater positive impact.
+
+                            Mission of this group is to create more entrepreneurs from BUET graduates. They will add value to the national economy.
+                            This will be a common guiding and supporting platform for BUET graduates. They will have the option for switching business in diversified sectors.
+
                         </p>
                     </div>
                 </div>
@@ -196,23 +200,30 @@
 
     <!-- Start Our Campus Information Area -->
     <section class="our-campus-information-area my-5">
-        <div class="container">
+        <div class="container" style="background-color: #92210f">
             <div class="row align-items-center">
 
                 <div class="col-xl-5">
-                    <div class="campus-content campus-content2" style="overflow: hidden">
+                    <div class="campus-content campus-content2 py-0 px-5" style="overflow: hidden">
                         {{--                        <span>Our campus information</span>--}}
                         <h2>Our Mission</h2>
                         <p>
-                            This group is a convenient platform for cooperation between entrepreneurs  having different interests. This group shall be an all in all supporting center for a newcomer in business by eliminating all types of shortcomings faced by him. To achieve this, BUET graduates are able to get technical support, share knowledge, seek grants and investment, understand market Opportunities, help others and anything else according to contemporary demand and availability. There will not be any bindings in doing business.
+                            The mission is to build a platform for cooperation among BUETian entrepreneurs, promote entrepreneurial mindset among BUETians and to support startups by the BUETians.
+
+                            This group is a convenient platform for cooperation between entrepreneurs  having different interests. This group shall be an all in all supporting center for a newcomer in business by eliminating all types of shortcomings faced by him.
+
+                            To achieve this, BUET graduates are able to get technical support, share knowledge, seek grants and investment, understand market Opportunities, help others and anything else according to contemporary demand and availability.
+
+                            There will not be any bindings in doing business.
+
                         </p>
                     </div>
                 </div>
 
-                <div class="col-xl-7">
-                    <div class="campus-img">
-                        <img src="{{asset('assets/img/banner/buet_auditorium_2.jpg')}}" alt="Image">
-                    </div>
+                <div class="col-xl-7" style="padding-left: 2.2rem; padding-right: 0">
+
+                        <img src="{{asset('assets/img/banner/buet_auditorium_2.jpg')}}" alt="Image" style="object-fit: cover">
+
                 </div>
             </div>
         </div>
@@ -227,27 +238,27 @@
             <div class="campus-experience-bg ptb-100">
                 <div class="campus-experience-slider owl-carousel owl-theme">
                     <div class="single-campus-experience">
-                        <span>Admission information</span>
+{{--                        <span>Admission information</span>--}}
 
-                        <h3>The campus experience</h3>
+                        <h3>Working Group</h3>
                         <p>Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie lacinia eget consectetur posuere blandit.</p>
 
-                        <a href="campus-experience.html" class="default-btn">
-                            Find out more
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
+{{--                        <a href="campus-experience.html" class="default-btn">--}}
+{{--                            Find out more--}}
+{{--                            <i class="ri-arrow-right-line"></i>--}}
+{{--                        </a>--}}
                     </div>
 
                     <div class="single-campus-experience">
-                        <span>Admission information</span>
+{{--                        <span>Admission information</span>--}}
 
-                        <h3>The campus experience about</h3>
+                        <h3>Working Group</h3>
                         <p>Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie lacinia eget consectetur posuere blandit.</p>
 
-                        <a href="campus-experience.html" class="default-btn">
-                            Find out more
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
+{{--                        <a href="campus-experience.html" class="default-btn">--}}
+{{--                            Find out more--}}
+{{--                            <i class="ri-arrow-right-line"></i>--}}
+{{--                        </a>--}}
                     </div>
                 </div>
             </div>

@@ -35,10 +35,10 @@
             <div class="col-xl-5">
                 <div class="campus-content">
                     {{--                        <span>Our campus information</span>--}}
-                    <h2>Our Vision</h2>
-                    <p>
-                        Mission of this group is to create more entrepreneurs from BUET graduates. They will add value to the national economy. This will be a common guiding and supporting platform for BUET graduates. They will have the option for switching business in diversified sectors.
-                    </p>
+                    <h2>OUR VISION</h2>
+                    <h4 class="text-white">
+                        Connecting BUETian Entrepreneurs for their success and making a greater impact for the Bangladesh economy.
+                    </h4>
                 </div>
             </div>
         </div>

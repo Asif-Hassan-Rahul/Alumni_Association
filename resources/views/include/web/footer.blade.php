@@ -1,82 +1,78 @@
 <footer class="footer-area black-bg-color">
     <div class="container">
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-start justify-content-center pt-100">
             <div class="col-lg-3 col-sm-6">
-                <div class="single-footer-widget bg-f9f5f1">
+                <div class="single-footer-widget bg-f9f5f1 pt-0" >
                     <a href="index.html" class="logo">
                         <img src="{{asset('assets/img/BUET_LOGO.png')}}" alt="Image">
                     </a>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas animi, minima velit corrupti fugit! Tenetur animi suscipit, reiciendis ad consectetur fugit</p>
+                    <p>Connecting BUETian Entrepreneurs for their success and making a greater impact for the Bangladesh economy.</p>
 
-                    <ul class="social-icon">
-                        <li>
-                            <span>Follow us:</span>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/" target="_blank">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                    </ul>
+{{--                    <ul class="social-icon">--}}
+{{--                        <li>--}}
+{{--                            <span>Follow us:</span>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <a href="https://www.facebook.com/" target="_blank">--}}
+{{--                                <i class="ri-facebook-fill"></i>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <a href="https://www.instagram.com/" target="_blank">--}}
+{{--                                <i class="ri-instagram-line"></i>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <a href="https://www.linkedin.com/" target="_blank">--}}
+{{--                                <i class="ri-linkedin-fill"></i>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <a href="https://twitter.com/" target="_blank">--}}
+{{--                                <i class="ri-twitter-fill"></i>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-footer-widget">
+            <div class="col-lg-3 col-sm-6 pt-5">
+                <div class="single-footer-widget pt-5">
                     <h3>Useful link</h3>
 
                     <ul class="import-link">
                         <li>
-                            <a href="application.html">Application</a>
+                            <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="faq.html">FAQ</a>
+                            <a href="{{route('about')}}">About</a>
+                        </li>
+
+
+                        <li>
+                            <a href="{{route('alumni')}}">Members</a>
                         </li>
                         <li>
-                            <a href="alumni.html">Alumni</a>
-                        </li>
-                        <li>
-                            <a href="terms-conditions.html">Terms & conditions</a>
-                        </li>
-                        <li>
-                            <a href="privacy-policy.html">Privacy policy</a>
+                            <a href="{{route('contact')}}">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-footer-widget">
-                    <h3>Study</h3>
+            <div class="col-lg-3 col-sm-6 pt-5">
+                <div class="single-footer-widget pt-5">
+                    <h3>Updates</h3>
 
                     <ul class="import-link">
                         <li>
-                            <a href="courses.html">Find a course</a>
+                            <a href="{{route('blogs_front')}}">Blog</a>
                         </li>
                         <li>
-                            <a href="application.html">Admissions</a>
+                            <a href="{{route('events')}}">News & Events</a>
                         </li>
                         <li>
-                            <a href="our-professors.html">Scholarships</a>
-                        </li>
-                        <li>
-                            <a href="campus-information.html">Study on campus</a>
+                            <a href="#">Gallery</a>
                         </li>
 {{--                        <li>--}}
 {{--                            <a href="tuition-fees.html">Fees and costs</a>--}}
@@ -85,8 +81,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-footer-widget">
+            <div class="col-lg-3 col-sm-6 pt-5">
+                <div class="single-footer-widget pt-5">
                     <h3>Inquiries</h3>
 
                     <ul class="address">
@@ -111,3 +107,16 @@
         </div>
     </div>
 </footer>
+
+<!-- Start Copy Right Area -->
+<div class="copy-right-area">
+    <div class="container p-0">
+        <p class="p-0 m-0">
+            Copyright <i class="ri-copyright-line"></i> 2022 BUET Entrepreneurs Network.
+        </p>
+        <p class="p-0 m-0">
+            Developed and maintained By <a href="http://hilinkz.com/" target="_blank">HiLinkz Ltd</a>
+        </p>
+    </div>
+</div>
+<!-- End Copy Right Area -->s

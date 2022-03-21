@@ -193,6 +193,13 @@
         </div>
     </section>
     <!-- End Events Area -->
+
+
+    <div id="news">
+        <!-- Start News Area -->
+        @include('web.news.news')
+    <!-- End News Area -->
+    </div>
 @endsection
 
 @section('custom_js')

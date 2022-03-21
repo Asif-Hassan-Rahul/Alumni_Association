@@ -114,15 +114,15 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Success Stories
-                                </a>
-                            </li>
+{{--                            <li class="nav-item">--}}
+{{--                                <a href="#" class="nav-link">--}}
+{{--                                    Success Stories--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
 
                             <li class="nav-item" {{ request()->is('blogs_front') ? 'active' : ''}}>
                                 <a href="{{route('blogs_front')}}" class="nav-link">
-                                    Blogs
+                                    Blog
                                 </a>
                             </li>
 

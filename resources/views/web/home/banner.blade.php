@@ -6,7 +6,7 @@
                     <div class="col-lg-6 d-flex align-items-center">
                         <div class="banner-content">
                             <span>Welcome to Bueten</span>
-                            <h1>BUET ALUMNI ASSOCIATION</h1>
+                            <h1>BUET ENTREPRENEUR NETWORK</h1>
 
                             <div class="banner-btn">
                                 <a href="{{route('events')}}" class="default-btn">
@@ -38,26 +38,26 @@
         </div>
     </div>
 
-    <ul class="social-link">
-        <li>
-            <a href="#" target="_blank">
-                Facebook
-            </a>
-        </li>
-        <li>
-            <a href="#" target="_blank">
-                Instagram
-            </a>
-        </li>
-        <li>
-            <a href="#" target="_blank">
-                Twitter
-            </a>
-        </li>
-        <li>
-            <a href="#" target="_blank">
-                Linkedin
-            </a>
-        </li>
-    </ul>
+{{--    <ul class="social-link">--}}
+{{--        <li>--}}
+{{--            <a href="#" target="_blank">--}}
+{{--                Facebook--}}
+{{--            </a>--}}
+{{--        </li>--}}
+{{--        <li>--}}
+{{--            <a href="#" target="_blank">--}}
+{{--                Instagram--}}
+{{--            </a>--}}
+{{--        </li>--}}
+{{--        <li>--}}
+{{--            <a href="#" target="_blank">--}}
+{{--                Twitter--}}
+{{--            </a>--}}
+{{--        </li>--}}
+{{--        <li>--}}
+{{--            <a href="#" target="_blank">--}}
+{{--                Linkedin--}}
+{{--            </a>--}}
+{{--        </li>--}}
+{{--    </ul>--}}
 </section>

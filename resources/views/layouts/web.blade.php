@@ -37,7 +37,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{asset('assets/img/favicon.png')}}">
     <!-- Title -->
-    <title>Alumni Association Laravel</title>
+    <title>BUET ENTREPRENEUR NETWORK</title>
 
 {{--    Custom CSS field--}}
     @yield('custom_css')
@@ -62,16 +62,7 @@
 @include('include.web.footer')
 <!-- End Footer Area -->
 
-<!-- Start Copy Right Area -->
-<div class="copy-right-area">
-    <div class="container">
-        <p>
-            Copyright <i class="ri-copyright-line"></i> 2022 Alumni Association & Developed By
-            <a href="http://hilinkz.com/" target="_blank">HiLinkz Ltd</a>
-        </p>
-    </div>
-</div>
-<!-- End Copy Right Area -->
+
 
 <!-- Start Go Top Area -->
 <div class="go-top">

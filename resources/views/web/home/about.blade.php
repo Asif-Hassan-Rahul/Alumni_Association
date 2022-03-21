@@ -9,7 +9,7 @@
 
             <div class="col-lg-6">
                 <div class="about-content ml-15">
-                    <span>About Bueten</span>
+                    <span>ABOUT BUETEn</span>
                     <h2>Our education system inspires the next generation</h2>
 
                     <p>BUET is the most renowned Engineering University in Bangladesh. Graduates from this university perform their jobs in different reputed organizations in home and abroad. They also have plausible reputations in higher study and research in reputed universities throughout the world.This is essential to mention that, graduates from this institution continue their higher study and career in different faculties rather than their undergrad subjects. This is not a rare case nowadays. Therefore, many buet graduates are found continuing their career in Human Resource, Finance, Administration of different multinational organizations with great dignity, confidence and success.</p>

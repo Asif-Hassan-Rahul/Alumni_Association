@@ -4,33 +4,33 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <form class="find-courses-from-bg mr-15">
-                        <h2>Find a courses</h2>
+                        <h2>Find a Member</h2>
 
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-6">
-                                <label class="single-check">
-                                    Undergraduate
-                                    <input type="radio" checked="checked" name="radio-2">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
+{{--                        <div class="row">--}}
+{{--                            <div class="col-lg-6 col-sm-6">--}}
+{{--                                <label class="single-check">--}}
+{{--                                    Undergraduate--}}
+{{--                                    <input type="radio" checked="checked" name="radio-2">--}}
+{{--                                    <span class="checkmark"></span>--}}
+{{--                                </label>--}}
+{{--                            </div>--}}
 
-                            <div class="col-lg-6 col-sm-6">
-                                <label class="single-check">
-                                    Postgraduate
-                                    <input type="radio" name="radio-2">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
+{{--                            <div class="col-lg-6 col-sm-6">--}}
+{{--                                <label class="single-check">--}}
+{{--                                    Postgraduate--}}
+{{--                                    <input type="radio" name="radio-2">--}}
+{{--                                    <span class="checkmark"></span>--}}
+{{--                                </label>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                         <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Keyword search">
+                            <input class="form-control" type="text" placeholder="Name">
                         </div>
 
                         <div class="form-group">
                             <select class="form-control">
-                                <option value="1">Category course</option>
+                                <option value="1">Business Category</option>
                                 <option value="2">Web Design</option>
                                 <option value="3">Web Developement</option>
                                 <option value="4">Graphic Design</option>
