@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\ManageGalleryController;
 use App\Http\Controllers\Admin\ManageRolesController;
 use App\Http\Controllers\Admin\ManageUsersController;
+use App\Http\Controllers\CommonControllers\AlumniController;
 use App\Http\Controllers\CommonControllers\DashboardController;
 use App\Http\Controllers\CommonControllers\EditProfileController;
 use Illuminate\Support\Facades\Artisan;
@@ -26,8 +27,8 @@ Route::view('/about','web.about.about')->name('about');
 Route::view('/contact','web.contact.contact')->name('contact');
 Route::view('/events','web.events.events')->name('events');
 Route::view('/event-details','web.events.event-details')->name('event_details');
-Route::get('/alumni',[\App\Http\Controllers\CommonControllers\AlumniController::class, 'getAlumniFrontEnd'])->name('alumni');
-Route::get('/alumni/{alumni_id}',[\App\Http\Controllers\CommonControllers\AlumniController::class, 'getSingleAlumniFrontEnd'])->name('front_alumni');
+Route::get('/alumni',[AlumniController::class, 'getAlumniFrontEnd'])->name('alumni');
+Route::get('/alumni/{alumni_id}',[AlumniController::class, 'getSingleAlumniFrontEnd'])->name('front_alumni');
 
 Route::get('/clear-all/{id}', function($id) {
     if ($id == 'admin1234') {
@@ -126,10 +127,11 @@ Route::get('/blog/{blog_id}', [BlogController::class, 'single_blog'])->name('sin
 
 Route::GET('/gallery-index', [ManageGalleryController::class,'index'])->name('gallery_index');
 Route::post('/create-photo-album',[ManageGalleryController::class,'create'])->name('create_photo_album');
-Route::post('/edit-photo-album',[\App\Http\Controllers\Admin\ManageGalleryController::class,'update'])->name('edit_photo_album');
-Route::GET('/gallery-show/{id}', [\App\Http\Controllers\Admin\ManageGalleryController::class,'show'])->name('gallery_show');
-Route::GET('/gallery-upload-page/{id}', [\App\Http\Controllers\Admin\ManageGalleryController::class,'goto_upload'])->name('gallery_upload');
-Route::post('/delete-photo-album', [\App\Http\Controllers\Admin\ManageGalleryController::class,'destroy'])->name('delete_photo_album');
-Route::post('/photo-upload/', [\App\Http\Controllers\Admin\ManageGalleryController::class,'store'])->name('photo_upload');
-Route::post('/delete-photo', [\App\Http\Controllers\Admin\ManageGalleryController::class,'delete_photo'])->name('delete_photo');
-Route::GET('/gallery-show-frontend/{id}', [\App\Http\Controllers\LandingControllers\GalleryController::class,'showIndividualAlbum'])->name('gallery_show_frontend');
+Route::post('/edit-photo-album',[ManageGalleryController::class,'update'])->name('edit_photo_album');
+Route::GET('/gallery-show/{id}', [ManageGalleryController::class,'show'])->name('gallery_show');
+Route::GET('/gallery-upload-page/{id}', [ManageGalleryController::class,'goto_upload'])->name('gallery_upload');
+Route::post('/delete-photo-album', [ManageGalleryController::class,'destroy'])->name('delete_photo_album');
+Route::post('/photo-upload/', [ManageGalleryController::class,'store'])->name('photo_upload');
+Route::post('/delete-photo', [ManageGalleryController::class,'delete_photo'])->name('delete_photo');
+Route::GET('/gallery', [ManageGalleryController::class,'showGalleryFront'])->name('gallery_front');
+Route::GET('/gallery/{id}', [ManageGalleryController::class,'singleGalleryFront'])->name('single_gallery_front');

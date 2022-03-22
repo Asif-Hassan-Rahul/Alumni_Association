@@ -237,7 +237,7 @@ class AlumniController extends Controller
     }
 
     public function getSingleAlumniFrontEnd($alumni_id){
-        $alumni_data = Alumni::find($alumni_id)->first();
+        $alumni_data = Alumni::where('id',$alumni_id)->first();
         $alumni_photo = $alumni_data->user->photo_url;
 
         return view('web.alumni.alumni_single')->with([
@@ -259,7 +259,7 @@ class AlumniController extends Controller
 
 
 //                $output =  $alumni->toJson();
-                return view('web.alumni.alumni-data', compact('alumni_data'))->render();
+                return view('web.alumni.alumni_data', compact('alumni_data'))->render();
             }
 
 

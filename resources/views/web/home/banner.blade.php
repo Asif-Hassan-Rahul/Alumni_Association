@@ -6,7 +6,7 @@
                     <div class="col-lg-6 d-flex align-items-center">
                         <div class="banner-content">
                             <span>Welcome to Bueten</span>
-                            <h1>BUET ENTREPRENEUR NETWORK</h1>
+                            <h1>BUET ENTREPRENEURS NETWORK</h1>
 
                             <div class="banner-btn">
                                 <a href="{{route('events')}}" class="default-btn">

@@ -37,7 +37,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{asset('assets/img/favicon.png')}}">
     <!-- Title -->
-    <title>BUET ENTREPRENEUR NETWORK</title>
+    <title>BUET ENTREPRENEURS NETWORK</title>
 
 {{--    Custom CSS field--}}
     @yield('custom_css')

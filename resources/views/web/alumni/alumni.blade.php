@@ -32,7 +32,7 @@
     <div class="page-title-area bg-3">
         <div class="container">
             <div class="page-title-content">
-                <h2>Our Alumnis</h2>
+                <h2>Our Members</h2>
 
                 <ul>
                     <li>
@@ -41,7 +41,7 @@
                         </a>
                     </li>
 
-                    <li class="active">Our Alumnis</li>
+                    <li class="active">Our Members</li>
                 </ul>
             </div>
         </div>
@@ -52,8 +52,8 @@
     <section class="team-area-three ptb-100">
         <div class="container">
             <div class="section-title">
-                <h2>Our Alumnis</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                <h2>Our Members</h2>
+{{--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>--}}
 
             </div>
             <div class="input-group mb-3">

@@ -264,4 +264,26 @@ class ManageGalleryController extends Controller
 
         return redirect()->route('gallery_show',[$album_id])->with('success', 'Photo has been Deleted Successfully');
     }
+
+    public function showGalleryFront(){
+        $albums = PhotoGallery::paginate(8);
+        $album_thumbnails = Image::all()->where('image_type' , '=' , 'ALBUM_THUMBNAIL');
+
+
+        return view('web.gallery.photo-gallery',[
+            'albums' => $albums,
+            'album_thumbnails' => $album_thumbnails,
+
+        ]);
+    }
+
+    public function singleGalleryFront($id){
+        $album = PhotoGallery::findOrFail($id);
+        $images = $album->images()->where('image_type', '=', 'GALLERY')->paginate(8);
+
+        return view('web.gallery.photo-gallery-single',[
+            'album'=>$album,
+            'images'=> $images,
+        ]);
+    }
 }
