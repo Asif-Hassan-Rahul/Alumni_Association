@@ -184,10 +184,7 @@
 {{--                        <span>Our campus information</span>--}}
                         <h2>Our Vision</h2>
                         <p>
-                            Connecting BUETian Entrepreneurs for better collaboration to produce greater positive impact.
-
-                            Mission of this group is to create more entrepreneurs from BUET graduates. They will add value to the national economy.
-                            This will be a common guiding and supporting platform for BUET graduates. They will have the option for switching business in diversified sectors.
+                            Connecting BUETian Entrepreneurs for their success and making a greater impact for the Bangladesh economy.
 
                         </p>
                     </div>
@@ -209,12 +206,6 @@
                         <h2>Our Mission</h2>
                         <p>
                             The mission is to build a platform for cooperation among BUETian entrepreneurs, promote entrepreneurial mindset among BUETians and to support startups by the BUETians.
-
-                            This group is a convenient platform for cooperation between entrepreneurs  having different interests. This group shall be an all in all supporting center for a newcomer in business by eliminating all types of shortcomings faced by him.
-
-                            To achieve this, BUET graduates are able to get technical support, share knowledge, seek grants and investment, understand market Opportunities, help others and anything else according to contemporary demand and availability.
-
-                            There will not be any bindings in doing business.
 
                         </p>
                     </div>

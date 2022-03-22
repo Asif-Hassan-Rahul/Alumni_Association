@@ -27,10 +27,11 @@
     <!-- Start Contact Info Area -->
     <section class="contact-info-area ptb-100">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex align-items-center" style="background-color: var(--optional-color)">
                 <div class="col-lg-7">
                     <div class="map-area">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3077.5968400730185!2d-119.76188708437041!3d39.523588017394154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80993f3dfa5eeaf5%3A0x70954ca5a06c2014!2s1312%20Greg%20St%2C%20Sparks%2C%20NV%2089431%2C%20USA!5e0!3m2!1sen!2sbd!4v1615354573837!5m2!1sen!2sbd"></iframe>
+                        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Ishraak%20solutions%20Ltd.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="margin-left: -3em;"></iframe>
+
                     </div>
                 </div>
 
@@ -42,18 +43,21 @@
                             <li class="location">
                                 <i class="ri-map-pin-2-fill"></i>
                                 <span>Address</span>
-                                1312 Greg Street, Sparks. NV 88441
+                                House 76 (Level 1)
+                                Road 4, Block B
+                                Niketan, Gulshan 1
+                                Dhaka 1212
                             </li>
                             <li>
                                 <i class="ri-mail-line"></i>
                                 <span>Email</span>
-                                <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#88e1e6eee7c8fde6ebe7a6ebe7e5"><span class="__cf_email__" data-cfemail="ef86818980af9a818c80c18c8082">[email&#160;protected]</span></a>
+                                <a href="mailto:info@bueten.org">info@bueten.org</a>
                             </li>
-                            <li>
-                                <i class="ri-phone-fill"></i>
-                                <span>Phone</span>
-                                <a href="tel:+1-(514)-312-5678">+1 (514) 312-5678</a>
-                            </li>
+{{--                            <li>--}}
+{{--                                <i class="ri-phone-fill"></i>--}}
+{{--                                <span>Phone</span>--}}
+{{--                                <a href="tel:+1-(514)-312-5678">+1 (514) 312-5678</a>--}}
+{{--                            </li>--}}
                         </ul>
 
                         <h3>Follow Us</h3>

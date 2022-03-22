@@ -89,7 +89,7 @@
                         <li class="location">
                             <i class="ri-map-pin-line"></i>
                             <span>Address</span>
-                            1312 Greg Street, Sparks. NV 88441
+                            House 76 (Level 1) Road 4, Block B Niketan, Gulshan 1 Dhaka 1212
                         </li>
                         <li>
                             <i class="ri-mail-line"></i>
