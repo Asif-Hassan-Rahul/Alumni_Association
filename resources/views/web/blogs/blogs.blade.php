@@ -65,7 +65,7 @@
 
                                     <h3>
                                         <a href="{{route('single_blog',['blog_id' => $blog->id])}}">
-                                            {{$blog->blog_category->title}}
+                                            {{$blog->title}}
                                         </a>
                                     </h3>
 
