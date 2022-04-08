@@ -66,7 +66,7 @@
                 <div class="col-lg-4">
                     <div class="event-sidebar ml-15">
                         <div class="event-single-sidebar">
-                            <h3>Events description - 2021</h3>
+                            <h3>Events description - 2022</h3>
 
                             <ul>
                                 <li>
@@ -79,20 +79,20 @@
                                 </li>
                                 <li>
                                     Event Category
-                                    <span>Conference</span>
+                                    <span>Meet and Greet</span>
                                 </li>
                                 <li>
                                     Location
                                     <span>Bangladesh</span>
                                 </li>
-                                <li>
-                                    Total slot
-                                    <span>N/A</span>
-                                </li>
-                                <li>
-                                    Booked Slot
-                                    <span>N/A</span>
-                                </li>
+{{--                                <li>--}}
+{{--                                    Total slot--}}
+{{--                                    <span>N/A</span>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    Booked Slot--}}
+{{--                                    <span>N/A</span>--}}
+{{--                                </li>--}}
 {{--                                <li>--}}
 {{--                                    Website--}}
 {{--                                    <a href="index.html">www.unco.com</a>--}}

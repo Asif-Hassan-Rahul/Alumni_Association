@@ -63,9 +63,9 @@
                                     <span>2022</span>
                                 </div>
 
-                                <span>Conference</span>
+                                <span>Meet and Greet</span>
                                 <h3>
-                                    <a href="{{route('event_details',['id' => 1])}}">
+                                    <a href="{{route('event_details')}}">
                                         Iftar Adda for BUETEN members at BUET Graduates Club
                                     </a>
                                 </h3>
@@ -81,7 +81,7 @@
 
                     <div class="events-content ml-15 mt-5">
 {{--                        <span>Events</span>--}}
-                        <h2>Passed events</h2>
+                        <h2>Previous events</h2>
 
                         <ul class="events-list">
                             <li>
@@ -90,9 +90,9 @@
                                     <span>2022</span>
                                 </div>
 
-                                <span>Conference</span>
+                                <span>Meet and Greet</span>
                                 <h3>
-                                    <a href="{{route('event_details',['id' => 2])}}">
+                                    <a href="{{route('event_details')}}">
                                         Working Group formed for BUETEN
                                     </a>
                                 </h3>
