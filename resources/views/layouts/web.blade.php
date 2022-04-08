@@ -41,7 +41,7 @@
 
     <style>
         .page-title-area{
-            background-image: url({{asset('assets/img/page-title-bg/page-title-bg.jpg')}});
+            background-image: url({{asset('assets/img/page-title-bg/page-title-bg.jpg')}})!important;
         }
     </style>
 
