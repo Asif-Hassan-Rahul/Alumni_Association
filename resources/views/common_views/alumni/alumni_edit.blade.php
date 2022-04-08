@@ -104,9 +104,18 @@
                                                 class="text-danger font-weight-bold">*</span></label>
                                         <select id="department" name="department" class="form-select form-control" aria-label="Default select example">
                                             <option selected>Select Department</option>
-                                            <option value="1">Department 1</option>
-                                            <option value="2">Department 2</option>
-                                            <option value="3">Department 3</option>
+                                            <option value="Architecture">Architecture</option>
+                                            <option value="Chemical Engineering">Chemical Engineering</option>
+                                            <option value="Civil Engineering">Civil Engineering</option>
+                                            <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                                            <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+                                            <option value="Industrial and Production Engineering">Industrial and Production Engineering</option>
+                                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                            <option value="Materials and Metallurgical Engineering">Materials and Metallurgical Engineering</option>
+                                            <option value="Naval Architecture and Marine Engineering">Naval Architecture and Marine Engineering</option>
+                                            <option value="Petroleum and Mineral Resources Engineering">Petroleum and Mineral Resources Engineering</option>
+                                            <option value="Urban and Regional Planning">Urban and Regional Planning</option>
+                                            <option value="Water Resources Engineering">Water Resources Engineering</option>
                                         </select>
                                     </div>
                                 </div>
@@ -117,9 +126,14 @@
                                                 class="text-danger font-weight-bold">*</span></label>
                                         <select id="hall" name="hall" class="form-select form-control" aria-label="Default select example">
                                             <option selected>Select Hall</option>
-                                            <option value="1">Hall 1</option>
-                                            <option value="2">Hall 2</option>
-                                            <option value="3">Hall 3</option>
+                                            <option value="Ahsanullah Hall">Ahsanullah Hall</option>
+                                            <option value="Titumir Hall">Titumir Hall</option>
+                                            <option value="Chatri Hall">Chatri Hall</option>
+                                            <option value="Dr. M. A. Rashid Hall">Dr. M. A. Rashid Hall</option>
+                                            <option value="Kazi Nazrul Islam Hall">Kazi Nazrul Islam Hall</option>
+                                            <option value="Sher-e-Bangla Hall">Sher-e-Bangla Hall</option>
+                                            <option value="Suhrawardy Hall">Suhrawardy Hall</option>
+                                            <option value="Shahid Smrity Hall">Shahid Smrity Hall</option>
                                         </select>
                                     </div>
                                 </div>
@@ -650,6 +664,10 @@
         $(window).on('load', function () {
             document.getElementById("number_of_child").value = "{{$alumni->number_of_child}}";
             document.getElementById("buet_id").value = "{{$alumni->buet_id}}";
+            document.getElementById("department").value = "{{$alumni->department}}";
+            document.getElementById("hall").value = "{{$alumni->hall}}";
+            document.getElementById("area_of_expertise").value = "{{$alumni->area_of_expertise}}";
+            document.getElementById("area_of_interest").value = "{{$alumni->area_of_interest}}";
             document.getElementById("marital_status").value = "{{$alumni->marital_status}}";
             document.getElementById("blood_group").value = "{{$alumni->blood_group}}";
             document.getElementById("gender").value = "{{$alumni->gender}}";

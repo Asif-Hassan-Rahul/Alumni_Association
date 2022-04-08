@@ -9,10 +9,11 @@
 
             <div class="col-lg-6">
                 <div class="about-content ml-15">
-                    <span>ABOUT BUETEn</span>
-                    <h2>Our education system inspires the next generation</h2>
+                    <span>ABOUT BUETEN</span>
+{{--                    <h2>Our education system inspires the next generation</h2>--}}
 
-                    <p>BUET is the most renowned Engineering University in Bangladesh. Graduates from this university perform their jobs in different reputed organizations in home and abroad. They also have plausible reputations in higher study and research in reputed universities throughout the world.This is essential to mention that, graduates from this institution continue their higher study and career in different faculties rather than their undergrad subjects. This is not a rare case nowadays. Therefore, many buet graduates are found continuing their career in Human Resource, Finance, Administration of different multinational organizations with great dignity, confidence and success.</p>
+                    <p>BUET is the most renowned Engineering University in Bangladesh. Graduates from this university are highly positioned in home and abroad. They are successful in their respective careers as engineering professionals, academic researchers, consultants, managers as well as entrepreneurs. Entrepreneurial activity is the backbone of the economy, and leads to economic growth, creates job opportunities, and raises stability and creativity. While entrepreneurship has always been important, the ratio of BUET graduates being entrepreneurs is low in number. An entrepreneur is a person who accepts a large risk in order to use his/her creative initiative to start a company. He / she often faces many challenges that can easily be overcome by support from fellow people. Thus we believe networking among BUETian Entrepreneurs would create a platform where entrepreneurs will get help from each other. It will also encourage other BUET graduates to establish their own companies and thus make a greater impact in the sustainable development of Bangladesh.
+                    </p>
 
                     <a href="{{route('about')}}" class="default-btn">
                         Find out more

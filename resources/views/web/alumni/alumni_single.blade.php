@@ -77,8 +77,12 @@
                                     <h6>Social Links</h6>
                                     <hr class="mt-0 mb-4">
                                     <div class="d-flex justify-content-start">
+                                        @if($alumni_data->facebook_id != null)
                                         <a href="{{$alumni_data->facebook_id}}"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
+                                        @endif
+                                        @if($alumni_data->linkedin_id != null)
                                         <a href="{{$alumni_data->linkedin_id}}"><i class="fab fa-linkedin fa-lg me-3"></i></a>
+                                            @endif
 {{--                                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>--}}
                                     </div>
                                 </div>

@@ -70,32 +70,18 @@
                         <h2>About Bueten</h2>
 
                         <p style="text-align: justify">
-                            BUET is the most renowned Engineering University in Bangladesh. Graduates from this university perform their jobs in different reputed organizations in home and abroad. They also have plausible reputations in higher study and research in reputed universities throughout the world.
+                            BUET is the most renowned Engineering University in Bangladesh. Graduates from this university are highly positioned in home and abroad. They are successful in their respective careers as engineering professionals, academic researchers, consultants, managers as well as entrepreneurs.
                             <br>
 
-                            This is essential to mention that, graduates from this institution continue their higher study and career in different faculties rather than their undergrad subjects. This is not a rare case nowadays. Therefore, many buet graduates are found continuing their career in Human Resource, Finance, Administration of different multinational organizations with great dignity, confidence and success.
+                            Entrepreneurial activity is the backbone of the economy, and leads to economic growth, creates job opportunities, and raises stability and creativity. While entrepreneurship has always been important, the ratio of BUET graduates being entrepreneurs is low in number.
+                            <br>
+
+                            An entrepreneur is a person who accepts a large risk in order to use his/her creative initiative to start a company. He / she often faces many challenges that can easily be overcome by support from fellow people. Thus we believe networking among BUETian Entrepreneurs would create a platform where entrepreneurs will get help from each other. It will also encourage other BUET graduates to establish their own companies and thus make a greater impact in the sustainable development of Bangladesh.
+                            <br>
+
 
                         </p>
                     </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-xl-12 mt-3">
-                    <p style="text-align: justify">
-                        <h3 class="fw-bold">Why does this matter?</h3>
-                        From previous discussion, it is unambiguous that BUET graduates have tremendous potential and they are object oriented. Whatever the topic they deal with, they can perform very well. However, it is a fact that, number of BUET graduates in entrepreneurship is not satisfactory compared to their potential. So, nurturing and guidance is essential to flourish their latency.
-                        <br>
-
-                        <h3 class="fw-bold mt-1">Where is the correlation with this group?</h3>
-                        Members of this group will be assisted in diverse ways. A proverb goes that diamond cuts diamond. A BUET graduate will understand the exact requirement of another in the best way. They know the mentality of a BUETian.
-                        <br>
-
-                        Firstly, many BUET graduates have good technical knowledge of some specific field. He will share his knowledge with the potential person.
-                        Secondly, many might have assets from ancestors, from jobs or in any other ways. They may have the intention to invest but have no proper guidance and knowledge. So, they can easily seek assistance from this group members from different tracks.
-                        Thirdly, the incumbent may understand the sources of grants, investments from this group.
-                        Fourth, anybody may want a partnership with similar-minded people and this group will be a good option for him to find an exact match.There are endless ways to assist each other through this network.
-                    </p>
                 </div>
             </div>
         </div>
@@ -232,7 +218,7 @@
 {{--                        <span>Admission information</span>--}}
 
                         <h3>Working Group</h3>
-                        <p>Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie lacinia eget consectetur posuere blandit.</p>
+                        <p>To materialize the goals of BUETEN a seventeen member Working Group has been formed. The group meets regularly, once in a week, to oversee the day to day activities, to take new initiatives and to execute the initiatives for their success.Those who are interested to join please email to info@bueten.org.</p>
 
 {{--                        <a href="campus-experience.html" class="default-btn">--}}
 {{--                            Find out more--}}
@@ -240,17 +226,17 @@
 {{--                        </a>--}}
                     </div>
 
-                    <div class="single-campus-experience">
+{{--                    <div class="single-campus-experience">--}}
 {{--                        <span>Admission information</span>--}}
 
-                        <h3>Working Group</h3>
-                        <p>Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie lacinia eget consectetur posuere blandit.</p>
+{{--                        <h3>Working Group</h3>--}}
+{{--                        <p>Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie lacinia eget consectetur posuere blandit.</p>--}}
 
 {{--                        <a href="campus-experience.html" class="default-btn">--}}
 {{--                            Find out more--}}
 {{--                            <i class="ri-arrow-right-line"></i>--}}
 {{--                        </a>--}}
-                    </div>
+{{--                    </div>--}}
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ Page Title Area Style
   padding-bottom: 100px;
   position: relative;
   z-index: 1;
-  background-image: url(../../img/page-title-bg/page-title-bg-1.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,39 +14,39 @@ Page Title Area Style
 }
 
 .page-title-area.bg-1 {
-  background-image: url(../../img/page-title-bg/page-title-bg-1.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
 }
 
 .page-title-area.bg-2 {
-  background-image: url(../../img/page-title-bg/page-title-bg-2.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
 }
 
 .page-title-area.bg-3 {
-  background-image: url(../../img/page-title-bg/page-title-bg-3.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
 }
 
 .page-title-area.bg-4 {
-  background-image: url(../../img/page-title-bg/page-title-bg-4.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
 }
 
 .page-title-area.bg-5 {
-  background-image: url(../../img/page-title-bg/page-title-bg-5.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
 }
 
 .page-title-area.bg-6 {
-  background-image: url(../../img/page-title-bg/page-title-bg-6.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
 }
 
 .page-title-area.bg-7 {
-  background-image: url(../../img/page-title-bg/page-title-bg-7.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
 }
 
 .page-title-area.bg-8 {
-  background-image: url(../../img/page-title-bg/page-title-bg-8.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
 }
 
 .page-title-area.bg-9 {
-  background-image: url(../../img/page-title-bg/page-title-bg-9.jpg);
+  background-image: url(../../img/page-title-bg/page-title-bg.jpg);
 }
 
 .page-title-area::before {

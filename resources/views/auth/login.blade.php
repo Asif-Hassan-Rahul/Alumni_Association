@@ -132,18 +132,18 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <div class="login-action">
-								<span class="log-rem">
-									<input id="remember-2" type="checkbox">
-									<label>Keep me logged in</label>
-								</span>
+{{--                    <div class="col-12">--}}
+{{--                        <div class="login-action">--}}
+{{--								<span class="log-rem">--}}
+{{--									<input id="remember-2" type="checkbox">--}}
+{{--									<label>Keep me logged in</label>--}}
+{{--								</span>--}}
 
-                            <span class="forgot-login">
-									<a href="#">Forgot your password?</a>
-								</span>
-                        </div>
-                    </div>
+{{--                            <span class="forgot-login">--}}
+{{--									<a href="#">Forgot your password?</a>--}}
+{{--								</span>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                     <div class="col-12">
                         <button class="default-btn" type="submit">

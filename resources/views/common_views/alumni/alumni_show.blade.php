@@ -198,9 +198,25 @@
                                 <div class="col-sm-3">
                                     <h6 class="mb-0">Batch</h6>
                                 </div>
-                                <div class="col-sm-9 text-secondary">
+                                <div class="col-sm-3 text-secondary">
                                     {{$alumni_data->batch}}
                                 </div>
+
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Hall</h6>
+                                </div>
+                                <div class="col-sm-3 text-secondary">
+                                    {{$alumni_data->hall}}
+                                </div>
+
+                                <div class="col-sm-3 mt-2">
+                                    <h6 class="mb-0">Department</h6>
+                                </div>
+                                <div class="col-sm-3 text-secondary mt-2">
+                                    {{$alumni_data->department}}
+                                </div>
+
+
                             </div>
                             <hr>
 {{--                            <div class="row">--}}

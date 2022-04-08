@@ -1,7 +1,7 @@
 <section class="blog-area pt-100 pb-70">
     <div class="container">
         <div class="section-title">
-            <h2>Academic’s news</h2>
+            <h2>Success Stories</h2>
             {{--            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt laboredolore magna suspendisse ultrices gravida.</p>--}}
         </div>
 

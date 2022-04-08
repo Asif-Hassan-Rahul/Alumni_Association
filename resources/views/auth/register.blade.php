@@ -209,9 +209,18 @@
                             <label>Department</label>
                             <select id="department" name="department" class="form-select form-control" aria-label="Default select example">
                                 <option selected>Select Department</option>
-                                <option value="1">Department 1</option>
-                                <option value="2">Department 2</option>
-                                <option value="3">Department 3</option>
+                                <option value="Architecture">Architecture</option>
+                                <option value="Chemical Engineering">Chemical Engineering</option>
+                                <option value="Civil Engineering">Civil Engineering</option>
+                                <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                                <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+                                <option value="Industrial and Production Engineering">Industrial and Production Engineering</option>
+                                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                <option value="Materials and Metallurgical Engineering">Materials and Metallurgical Engineering</option>
+                                <option value="Naval Architecture and Marine Engineering">Naval Architecture and Marine Engineering</option>
+                                <option value="Petroleum and Mineral Resources Engineering">Petroleum and Mineral Resources Engineering</option>
+                                <option value="Urban and Regional Planning">Urban and Regional Planning</option>
+                                <option value="Water Resources Engineering">Water Resources Engineering</option>
                             </select>
                         </div>
                     </div>
@@ -244,14 +253,14 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <div class="login-action">
-								<span class="log-rem">
-									<input id="remember-2" type="checkbox">
-									<label>Show password</label>
-								</span>
-                        </div>
-                    </div>
+{{--                    <div class="col-12">--}}
+{{--                        <div class="login-action">--}}
+{{--								<span class="log-rem">--}}
+{{--									<input id="remember-2" type="checkbox">--}}
+{{--									<label>Show password</label>--}}
+{{--								</span>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                     <div class="col-12">
                         <button class="default-btn register" type="submit">
@@ -278,7 +287,7 @@
 {{--                    </div>--}}
 
                     <div class="col-12">
-                        <p class="create">Already have an account? <a href="log-in.html">Log in</a></p>
+                        <p class="create">Already have an account? <a href="{{route('login')}}">Log in</a></p>
                     </div>
                 </div>
             </form>
