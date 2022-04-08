@@ -12,7 +12,15 @@
                     <span>ABOUT BUETEN</span>
 {{--                    <h2>Our education system inspires the next generation</h2>--}}
 
-                    <p>BUET is the most renowned Engineering University in Bangladesh. Graduates from this university are highly positioned in home and abroad. They are successful in their respective careers as engineering professionals, academic researchers, consultants, managers as well as entrepreneurs. Entrepreneurial activity is the backbone of the economy, and leads to economic growth, creates job opportunities, and raises stability and creativity. While entrepreneurship has always been important, the ratio of BUET graduates being entrepreneurs is low in number. An entrepreneur is a person who accepts a large risk in order to use his/her creative initiative to start a company. He / she often faces many challenges that can easily be overcome by support from fellow people. Thus we believe networking among BUETian Entrepreneurs would create a platform where entrepreneurs will get help from each other. It will also encourage other BUET graduates to establish their own companies and thus make a greater impact in the sustainable development of Bangladesh.
+                    <p style="text-align: justify">
+                        BUET is the most renowned Engineering University in Bangladesh. Graduates from this university are highly positioned in home and abroad. They are successful in their respective careers as engineering professionals, academic researchers, consultants, managers as well as entrepreneurs.
+                        <br>
+
+                        Entrepreneurial activity is the backbone of the economy, and leads to economic growth, creates job opportunities, and raises stability and creativity. While entrepreneurship has always been important, the ratio of BUET graduates being entrepreneurs is low in number.
+                        <br>
+
+                        An entrepreneur is a person who accepts a large risk in order to use his/her creative initiative to start a company. He / she often faces many challenges that can easily be overcome by support from fellow people. Thus we believe networking among BUETian Entrepreneurs would create a platform where entrepreneurs will get help from each other. It will also encourage other BUET graduates to establish their own companies and thus make a greater impact in the sustainable development of Bangladesh.
+                        <br>
                     </p>
 
                     <a href="{{route('about')}}" class="default-btn">
