@@ -39,6 +39,12 @@
     <!-- Title -->
     <title>BUET ENTREPRENEURS NETWORK</title>
 
+    <style>
+        .page-title-area{
+            background-image: url({{asset('assets/img/page-title-bg/page-title-bg.jpg')}});
+        }
+    </style>
+
 {{--    Custom CSS field--}}
     @yield('custom_css')
 </head>
