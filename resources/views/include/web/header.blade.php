@@ -144,6 +144,26 @@
                                 </a>
                             </li>
 
+                            <li class="nav-item {{ request()->is('contact') ? 'active' : ''}}">
+                                <a href="{{route('contact')}}" class="nav-link">Contact</a>
+                            </li>
+
+                            <li id="auth">
+                                @if(\Illuminate\Support\Facades\Auth::user())
+                                    <a href="{{route('dashboard')}}" class="nav-link">
+                                        Dashboard
+                                    </a>
+                                @else
+                                    <a href="{{route('login')}}" class="nav-link">
+                                        Login
+                                    </a>
+
+                                    <a href="{{route('register')}}" class="nav-link">
+                                        Register
+                                    </a>
+                                @endif
+                            </li>
+
 
                             {{--                            <li class="nav-item">--}}
 {{--                                <a href="#" class="nav-link">--}}
@@ -285,9 +305,7 @@
 {{--                            </li>--}}
 
 
-                            <li class="nav-item {{ request()->is('contact') ? 'active' : ''}}">
-                                <a href="{{route('contact')}}" class="nav-link">Contact</a>
-                            </li>
+
                         </ul>
 
                         <div class="others-options">

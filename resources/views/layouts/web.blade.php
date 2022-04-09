@@ -43,6 +43,42 @@
         .page-title-area{
             background-image: url({{asset('assets/img/page-title-bg/page-title-bg.jpg')}})!important;
         }
+
+        /*.mean-bar{*/
+        /*    width: 70vw!important;*/
+        /*    margin-left: 18vw!important;*/
+        /*}*/
+        .others-options ul{
+            display: block!important;
+        }
+
+        #auth{
+            display: none;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .logo img{
+                max-width: 50%;
+            }
+            .mean-bar{
+                max-width: 80%;
+                margin-left: 20%;
+            }
+            #auth{
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width: 820px) {
+            #auth{
+                display: block;
+            }
+
+            .mean-bar{
+                max-width: 80%;
+                margin-left: 20%;
+            }
+        }
     </style>
 
 {{--    Custom CSS field--}}
