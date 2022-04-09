@@ -77,6 +77,14 @@
                                 </li>
                             </ul>
                         </div>
+
+                        <div class="go-back">
+                            <div class="row">
+                                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                                    <a class="default-btn" href="{{route('blogs_front')}}"><i class="fa-solid fa-arrow-left-long"></i> Go Back</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
