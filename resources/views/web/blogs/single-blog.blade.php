@@ -37,14 +37,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="blog-details-content mr-15">
-                        @if($blog->full_image != null)
-                        <div class="blog-details-img">
-                            <img src="{{ asset('storage/'.$blog->full_image)}}" alt="Image">
-                        </div>
-                        @endif
-
                         <div class="blog-top-content">
                             <div class="blog-content">
+                                <h3>{{$blog->title}}</h3>
                                 <ul class="admin">
                                     <li>
                                         <i class="ri-calendar-2-line"></i>
@@ -52,16 +47,23 @@
                                     </li>
                                 </ul>
 
-                                <h3>{{$blog->title}}</h3>
+                                @if($blog->full_image != null)
+                                    <div class="blog-details-img">
+                                        <img src="{{ asset('storage/'.$blog->full_image)}}" alt="Image">
+                                    </div>
+                                @endif
+
+
 
                                 <p class="mt--40 p-0 "> {!! html_entity_decode($blog->detail) !!} </p>
 
 
                                 <div class="gap-mb-20"></div>
                             </div>
-
-
                         </div>
+
+
+
 
                         <div class="tags">
                             <ul class="tag-link">
