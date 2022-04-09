@@ -83,10 +83,10 @@
                     </div>
                 </div>
             </div>
-            <a href="{{route('events')}}#news" class="default-btn" style="width: 20%">
-                Find out more
-                <i class="ri-arrow-right-line"></i>
-            </a>
+{{--            <a href="{{route('events')}}#news" class="default-btn" style="width: 20%">--}}
+{{--                Find out more--}}
+{{--                <i class="ri-arrow-right-line"></i>--}}
+{{--            </a>--}}
         </div>
     </div>
 </section>
