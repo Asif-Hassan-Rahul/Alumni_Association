@@ -67,6 +67,9 @@
             #auth{
                 display: block;
             }
+            .navbar-nav{
+                max-height: fit-content!important;
+            }
         }
 
         @media only screen and (max-width: 820px) {
@@ -77,6 +80,9 @@
             .mean-bar{
                 max-width: 80%;
                 margin-left: 20%;
+            }
+            .navbar-nav{
+                max-height: fit-content!important;
             }
         }
     </style>
