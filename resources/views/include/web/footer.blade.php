@@ -94,7 +94,7 @@
                         <li>
                             <i class="ri-mail-line"></i>
                             <span>Email</span>
-                            <a href="mailto:info@bueten.com">info@bueten.com</a>
+                            <a href="mailto:info@bueten.com">info.bueten@gmail.com</a>
                         </li>
 {{--                        <li>--}}
 {{--                            <i class="ri-phone-line"></i>--}}

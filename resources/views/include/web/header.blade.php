@@ -42,7 +42,7 @@
                         <div class="cart-icon" style="top:unset;">
                             <a href="mailto:info@bueten.org" class="text-white">
                                 <i class="fa-solid fa-envelope"></i>
-                                info@bueten.org
+                                info.bueten@gmail.com
                             </a>
                         </div>
                     </div>
