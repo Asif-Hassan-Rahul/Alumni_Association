@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="single-footer-widget bg-f9f5f1 pt-0" >
                     <a href="index.html" class="logo">
-                        <img src="{{asset('assets/img/BUET_LOGO.png')}}" alt="Image">
+                        <img  src="{{asset('assets/img/final-logo-footer.png')}}" alt="logo" style=" width: 280px!important;">
                     </a>
 
                     <p>Connecting BUETian Entrepreneurs for their success and making a greater impact for the Bangladesh economy.</p>

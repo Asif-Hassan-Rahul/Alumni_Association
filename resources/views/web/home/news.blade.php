@@ -8,9 +8,9 @@
         <div class="row justify-content-md-center">
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog">
-                    <a href="blog-details.html" class="blog-img">
-                        <img src="assets/img/blog/blog-1.jpg" alt="Image">
-                        <span>Academics</span>
+                    <a href="{{route('story_details')}}" class="blog-img d-flex justify-content-center">
+                        <img src="{{asset('assets\img\success-stories\Serajul_Mawla.jpeg')}}" style="height: 241.86px" alt="Image">
+{{--                        <span>Academics</span>--}}
                     </a>
 
                     <div class="blog-content">
@@ -22,12 +22,12 @@
                         </ul>
 
                         <h3>
-                            <a href="blog-details.html">
-                                How I applying to university
+                            <a href="{{route('story_details')}}">
+                                Md. Serajul Islam Mawla (ME 95)
                             </a>
                         </h3>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore. Ipsum nobis amet nisi voluptate corporis consectetur adipisicing elit alias</p>
+                        <p>Md. Serajul Islam Mawla is a successful entrepreneur who has established a significant footprint in the energy sector of Bangladesh. Md. Serajul completed his B.Sc. Eng. degree</p>
                     </div>
                 </div>
             </div>

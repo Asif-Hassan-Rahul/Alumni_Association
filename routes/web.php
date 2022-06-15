@@ -119,6 +119,13 @@ Route::get('/blog/{blog_id}', [BlogController::class, 'single_blog'])->name('sin
 
 /*
 -----------------------------------------------------------
+ ==== Success Story Here  ===
+-----------------------------------------------------------
+*/
+Route::view('/success-story/details' , 'web.success_stories.story_details')->name('story_details');
+
+/*
+-----------------------------------------------------------
  ==== Manage Gallery Here  ===
 -----------------------------------------------------------
 */

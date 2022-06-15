@@ -59,7 +59,7 @@
                 <div class="mobile-responsive-menu">
                     <div class="logo">
                         <a href="/">
-                            <img height="140" src="{{asset('assets/img/BUET_LOGO.png')}}" alt="logo">
+                            <img height="140" src="{{asset('assets/img/final-logo.png')}}" alt="logo">
                         </a>
                     </div>
 
@@ -85,7 +85,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="/">
-                        <img  src="{{asset('assets/img/BUET_LOGO.png')}}" alt="logo" style=" width: 85px!important;">
+                        <img  src="{{asset('assets/img/final-logo.png')}}" alt="logo" style=" width: 280px!important;">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
