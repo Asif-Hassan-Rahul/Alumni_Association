@@ -34,9 +34,9 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog">
-                    <a href="blog-details.html" class="blog-img">
-                        <img src="assets/img/blog/blog-2.jpg" alt="Image">
-                        <span>Academics</span>
+                    <a href="{{route('story_details_2')}}" class="blog-img d-flex justify-content-center">
+                        <img src="{{asset('assets\img\success-stories\shahed hasan.jpg')}}" style="height: 241.86px" alt="Image">
+{{--                        <span>Academics</span>--}}
                     </a>
 
                     <div class="blog-content">
@@ -48,8 +48,8 @@
                         </ul>
 
                         <h3>
-                            <a href="blog-details.html">
-                                What and where choosing to study
+                            <a href="{{route('story_details_2')}}">
+                                Shahed Hassan Bappu (ME 94),
                             </a>
                         </h3>
 
