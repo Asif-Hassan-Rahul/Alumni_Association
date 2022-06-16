@@ -49,7 +49,7 @@
 
                         <h3>
                             <a href="{{route('story_details_2')}}">
-                                Shahed Hassan Bappu (ME 94),
+                                Shahed Hassan Bappu (ME 94)
                             </a>
                         </h3>
 
