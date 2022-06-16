@@ -53,7 +53,8 @@
                             </a>
                         </h3>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore. Ipsum nobis amet nisi voluptate corporis consectetur adipisicing elit alias</p>
+                        <p>Managing Director of <a class="text-danger" target="_blank" href="https://artisan-craft.com">ARTiSAN CRAFT (BD) LTD</a>, which is the first
+                            <a class="text-danger" target="_blank" href="https://en.wikipedia.org/wiki/Cooling_tower">Cooling Tower</a> manufacturer of Bangladesh. Small to very big cooling towers are in their production line.</p>
                     </div>
                 </div>
             </div>
