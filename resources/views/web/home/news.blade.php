@@ -61,9 +61,9 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog">
-                    <a href="blog-details.html" class="blog-img">
-                        <img src="assets/img/blog/blog-3.jpg" alt="Image">
-                        <span>Academics</span>
+                    <a href="{{route('story_details_3')}}" class="blog-img d-flex justify-content-center">
+                        <img src="{{asset('assets\img\success-stories\Md. Shamsul Alam.jpeg')}}" style="height: 241.86px" alt="Image">
+{{--                        <span>Academics</span>--}}
                     </a>
 
                     <div class="blog-content">
@@ -75,12 +75,13 @@
                         </ul>
 
                         <h3>
-                            <a href="blog-details.html">
-                                A day in the life of a student
+                            <a href="{{route('story_details_3')}}">
+                                Md. Shamsul Alam (NAME 95)
                             </a>
                         </h3>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi dicta ex labore. Ipsum nobis amet nisi voluptate corporis consectetur adipisicing elit alias</p>
+                        <p>Md. Shamsul Alam is a successful entrepreneur who has significant contribution in the
+                            marine sector of Bangladesh. Md. Alam completed his B.Sc. Eng. </p>
                     </div>
                 </div>
             </div>

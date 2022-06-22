@@ -124,6 +124,7 @@ Route::get('/blog/{blog_id}', [BlogController::class, 'single_blog'])->name('sin
 */
 Route::view('/success-story/details' , 'web.success_stories.story_details')->name('story_details');
 Route::view('/success-story/details/2' , 'web.success_stories.story_details_2')->name('story_details_2');
+Route::view('/success-story/details/3' , 'web.success_stories.story_details_3')->name('story_details_3');
 
 /*
 -----------------------------------------------------------
