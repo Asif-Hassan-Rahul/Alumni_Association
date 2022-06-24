@@ -54,7 +54,7 @@
                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{$alumni->name}}</h5>
-                    <p>{{$alumni->department}} {{substr($alumni->batch, -2)}}'</p>
+                    <p>{{get_derpartment_short_form($alumni->department)}} {{substr($alumni->batch, -2)}}'</p>
                     <h5 class="card-title"></h5>
                     {{--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the--}}
                     {{--                    card's content.</p>--}}
