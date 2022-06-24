@@ -76,41 +76,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
-                    <div class="widget-sidebar ml-15">
-
-
-
-                        <div class="sidebar-widget recent-post">
-                            <h3 class="widget-title">Latest Stories</h3>
-
-                            <ul>
-                                <li>
-                                    <a href="blog.html">
-                                        Managing the study of management
-                                        <img src="{{asset('assets/img/blog-details/blog-3.jpg')}}" alt="Image">
-                                    </a>
-                                    <span>March 08, 2021</span>
-                                </li>
-                                <li>
-                                    <a href="blog.html">
-                                        Show your appreciation this valentine's day!
-                                        <img src="{{asset('assets/img/blog-details/blog-2.jpg')}}" alt="Image">
-                                    </a>
-                                    <span>March 11, 2021</span>
-                                </li>
-                                <li>
-                                    <a href="blog.html">
-                                        Positivity and productivity during COVID-19
-                                        <img src="{{asset('assets/img/blog-details/blog-1.jpg')}}" alt="Image">
-                                    </a>
-                                    <span>March 10, 2021</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
+                @include('web.success_stories.latest_stories')
             </div>
         </div>
     </section>

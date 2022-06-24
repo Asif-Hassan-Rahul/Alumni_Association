@@ -17,7 +17,7 @@
                         <ul>
                             <li>
                                 <i class="ri-calendar-line"></i>
-                                <span>26 March, 2021</span>
+                                <span>18 June, 2022</span>
                             </li>
                         </ul>
 
@@ -43,7 +43,7 @@
                         <ul>
                             <li>
                                 <i class="ri-calendar-line"></i>
-                                <span>28 March, 2021</span>
+                                <span>22 June, 2022</span>
                             </li>
                         </ul>
 
@@ -70,7 +70,7 @@
                         <ul>
                             <li>
                                 <i class="ri-calendar-line"></i>
-                                <span>29 March, 2021</span>
+                                <span>24 June, 2022</span>
                             </li>
                         </ul>
 
