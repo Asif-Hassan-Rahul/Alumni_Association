@@ -25,8 +25,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/','welcome');
 Route::view('/about','web.about.about')->name('about');
 Route::view('/contact','web.contact.contact')->name('contact');
-Route::view('/events','web.events.events')->name('events');
-Route::view('/event-details','web.events.event-details')->name('event_details');
+
 Route::get('/alumni',[AlumniController::class, 'getAlumniFrontEnd'])->name('alumni');
 Route::get('/alumni/{alumni_id}',[AlumniController::class, 'getSingleAlumniFrontEnd'])->name('front_alumni');
 
@@ -125,6 +124,15 @@ Route::get('/blog/{blog_id}', [BlogController::class, 'single_blog'])->name('sin
 Route::view('/success-story/details' , 'web.success_stories.story_details')->name('story_details');
 Route::view('/success-story/details/2' , 'web.success_stories.story_details_2')->name('story_details_2');
 Route::view('/success-story/details/3' , 'web.success_stories.story_details_3')->name('story_details_3');
+
+/*
+-----------------------------------------------------------
+ ==== News & Events Here  ===
+-----------------------------------------------------------
+*/
+Route::view('/events','web.events.events')->name('events');
+Route::view('/event-details','web.events.event-details')->name('event_details');
+Route::view('/event-details-2','web.events.event-details-2')->name('event_details_2');
 
 /*
 -----------------------------------------------------------

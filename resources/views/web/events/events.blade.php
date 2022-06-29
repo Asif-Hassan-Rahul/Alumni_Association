@@ -59,22 +59,22 @@
                         <ul class="events-list">
                             <li>
                                 <div class="events-date">
-                                    <span class="mb-2">09 April</span>
+                                    <span class="mb-2">30 July</span>
                                     <span>2022</span>
                                 </div>
 
                                 <span>Meet and Greet</span>
                                 <h3>
-                                    <a href="{{route('event_details')}}">
-                                        Iftar Adda for BUETEN members at BUET Graduates Club
-                                    </a>
+{{--                                    <a href="{{route('event_details')}}">--}}
+                                        Get together
+{{--                                    </a>--}}
                                 </h3>
-                                <p id="event_details">An ifter party is convened on April 9, 2022 at BUET Graduates Club. BUETEN Members are invited to join.</p>
+                                <p id="event_details">A get together event will be held on July 30, 2022 at BUET Graduates Club. Please register at the following link ...</p>
 
-                                <a href="{{route('event_details',['id' => 1])}}" class="read-more">
-                                    Find out more
-                                    <i class="ri-arrow-right-line"></i>
-                                </a>
+{{--                                <a href="{{route('event_details',['id' => 2])}}" class="read-more">--}}
+{{--                                    Find out more--}}
+{{--                                    <i class="ri-arrow-right-line"></i>--}}
+{{--                                </a>--}}
                             </li>
                         </ul>
                     </div>
@@ -84,6 +84,28 @@
                         <h2>Previous events</h2>
 
                         <ul class="events-list">
+
+                            <li>
+                                <div class="events-date">
+                                    <span class="mb-2">09 April</span>
+                                    <span>2022</span>
+                                </div>
+
+                                <span>Meet and Greet</span>
+                                <h3>
+                                    <a href="{{route('event_details_2')}}">
+                                        Iftar Adda for BUETEN members at BUET Graduates Club
+                                    </a>
+                                </h3>
+                                <p id="event_details">An ifter party is convened on April 9, 2022 at BUET Graduates Club. BUETEN Members are invited to join.</p>
+
+                                <a href="{{route('event_details_2')}}" class="read-more">
+                                    Find out more
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </li>
+
+
                             <li>
                                 <div class="events-date">
                                     <span class="mb-2">11 March</span>
@@ -103,6 +125,8 @@
                                     <i class="ri-arrow-right-line"></i>
                                 </a>
                             </li>
+
+
                         </ul>
                     </div>
                 </div>
@@ -123,7 +147,7 @@
     <script>
         // Count Time JS
         function makeTimer() {
-            var endTime = new Date("november  30, 2023 17:00:00 PDT");
+            var endTime = new Date("July  30, 2022 17:00:00 PDT");
             var endTime = (Date.parse(endTime)) / 1000;
             var now = new Date();
             var now = (Date.parse(now) / 1000);
